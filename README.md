@@ -1,34 +1,103 @@
 # Interactive Executive Resume — Manuel Quinsacara Herrera
 
-Sitio estático bilingüe ES/EN preparado para GitHub Pages.
+Perfil profesional interactivo y bilingüe desarrollado para presentar experiencia, logros, competencias y trayectoria en:
 
-## Contenido
+**Supply Chain · Logística · Gestión de Materiales · Inventarios · SAP MM/WM · Operaciones Mineras · Mejora Continua**
 
-- `index.html` — perfil interactivo.
-- `assets/profile.webp` — fotografía optimizada para web.
-- `assets/og-preview.jpg` — imagen de vista previa para compartir el enlace.
-- `assets/Perfil_Profesional_Manuel_Quinsacara.pdf` — perfil profesional ejecutivo.
-- `assets/CV_ATS_Manuel_Quinsacara.pdf` — versión PDF del CV ATS Maestro.
-- `assets/CV_ATS_Manuel_Quinsacara.docx` — versión DOCX del CV ATS Maestro.
+## Sitio web
 
-## Publicar en GitHub Pages
+**Interactive Executive Resume**
 
-1. Crea un repositorio `TUUSUARIO.github.io`.
-2. Sube `index.html` y la carpeta `assets` a la raíz del repositorio.
-3. Ve a **Settings → Pages**.
-4. Selecciona **Deploy from a branch**.
-5. Branch: `main`; folder: `/ (root)`.
-6. Guarda.
-7. El sitio quedará disponible en `https://TUUSUARIO.github.io`.
+https://ManuelQuinsacaraH.github.io
 
-## Paso final después de conocer la URL pública
+Disponible en:
 
-Los metadatos Open Graph y Twitter Card ya están preparados y usan `assets/og-preview.jpg`. Una vez definida la URL pública conviene actualizar `og:image` a una URL absoluta y agregar `og:url` / `canonical`, por ejemplo:
+- Español
+- English
 
-`https://TUUSUARIO.github.io/assets/og-preview.jpg`
+## Perfil profesional
 
-Esto maximiza la compatibilidad de la vista previa al compartir el enlace en LinkedIn, WhatsApp, correo y otras plataformas.
+Ingeniero Comercial con aproximadamente 5 años de experiencia en Supply Chain, logística operacional, gestión de materiales e inventarios en minería de gran escala, principalmente en Minera Escondida | BHP.
 
-## Privacidad
+Experiencia en:
 
-La versión pública no muestra dirección particular ni teléfono. El contacto visible se limita a ubicación general, correo y LinkedIn.
+- Supply Chain Management
+- Materials Management
+- Inventory Management
+- Materials Planning
+- Mining Logistics
+- SAP MM / WM
+- Contractor Management
+- Operational Excellence
+- HSE
+- BHP Operating System (BOS)
+- Lean / 5S
+- Excel avanzado y automatización
+
+## Principales cifras
+
+- **500+ entregas mensuales**
+- **100.000+ SKU** en universo operacional
+- **~100 personas coordinadas indirectamente**
+- **~50 tractocamiones coordinados**
+- **~30% de reducción de no conformidades asociadas a entregas**
+- **~22,5 horas mensuales** reducidas en consolidación manual mediante automatización
+
+## Contenido del sitio
+
+El perfil interactivo está organizado en las siguientes secciones:
+
+1. Presentación
+2. Perfil profesional
+3. Experiencia
+4. Educación y certificaciones
+5. Competencias y herramientas
+6. Liderazgo, HSE y gestión
+7. Reconocimiento
+8. Idiomas y disponibilidad
+9. Documentos profesionales
+
+## Documentos disponibles
+
+El sitio permite acceder a tres formatos profesionales:
+
+### Interactive Executive Resume
+Versión web visual, navegable y bilingüe.
+
+### Perfil Profesional PDF
+Versión ejecutiva diseñada para compartir directamente con recruiters y profesionales.
+
+### CV ATS
+Versión optimizada para sistemas de seguimiento de candidatos y portales de empleo.
+
+Disponible en:
+
+- PDF
+- DOCX
+
+## Tecnologías
+
+El sitio fue desarrollado como una solución web estática utilizando:
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Design
+- GitHub Pages
+
+No requiere frameworks ni dependencias externas para funcionar.
+
+## Estructura del repositorio
+
+```text
+ManuelQuinsacaraH.github.io/
+│
+├── index.html
+├── README.md
+│
+└── assets/
+    ├── profile.webp
+    ├── og-preview.jpg
+    ├── Perfil_Profesional_Manuel_Quinsacara.pdf
+    ├── CV_ATS_Manuel_Quinsacara.pdf
+    └── CV_ATS_Manuel_Quinsacara.docx
