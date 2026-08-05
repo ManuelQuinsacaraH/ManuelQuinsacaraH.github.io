@@ -75,6 +75,16 @@ Disponible en:
 - PDF
 - DOCX
 
+### Contacto
+
+Manuel Quinsacara Herrera
+Antofagasta, Chile
+
+Email: mquinsacarah@outlook.com
+
+LinkedIn:
+https://www.linkedin.com/in/manuelquinsacarah
+
 ## Tecnologías
 
 El sitio fue desarrollado como una solución web estática utilizando:
@@ -101,3 +111,5 @@ ManuelQuinsacaraH.github.io/
     ├── Perfil_Profesional_Manuel_Quinsacara.pdf
     ├── CV_ATS_Manuel_Quinsacara.pdf
     └── CV_ATS_Manuel_Quinsacara.docx
+
+© 2026 Manuel Quinsacara Herrera
