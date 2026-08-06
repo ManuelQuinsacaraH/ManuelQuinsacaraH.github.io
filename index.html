@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#071019">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://manuelquinsacarah.github.io/">
+<meta name="description" content="Interactive Executive Resume de Manuel Quinsacara Herrera - Supply Chain, logística, gestión de materiales, inventarios, minería y SAP MM/WM.">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:site_name" content="Manuel Quinsacara Herrera">
+<meta property="og:title" content="Manuel Quinsacara Herrera | Supply Chain & Logistics Specialist">
+<meta property="og:description" content="Supply Chain, Materials Management, Inventory, Mining Operations, SAP MM/WM and Operational Excellence. Interactive Executive Resume.">
+<meta property="og:url" content="https://manuelquinsacarah.github.io/">
+<meta property="og:image" content="https://manuelquinsacarah.github.io/assets/og-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Manuel Quinsacara Herrera — Supply Chain & Logistics Specialist">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Manuel Quinsacara Herrera | Supply Chain & Logistics Specialist">
+<meta name="twitter:description" content="Supply Chain, Materials Management, Inventory, Mining Operations, SAP MM/WM and Operational Excellence. Interactive Executive Resume.">
+<meta name="twitter:image" content="https://manuelquinsacarah.github.io/assets/og-preview.jpg">
+<title>Manuel Quinsacara Herrera | Interactive Executive Resume</title>
+<style>
+:root{
+ --bg:#071019;--bg2:#0b1823;--panel:#0f202d;--paper:#f3f6f7;--white:#f7fafb;
+ --ink:#16232c;--muted:#6f7e88;--muted2:#91a0aa;--line:#dce5e8;
+ --teal:#6bc7c1;--teal2:#bde8e4;--copper:#bb7741;--copper2:#e0a576;
+ --max:1220px;--radius:24px;--shadow:0 26px 80px rgba(0,0,0,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}
+.skip-link{position:fixed;z-index:300;left:12px;top:-60px;padding:10px 14px;border-radius:9px;background:#fff;color:#071019;font-size:11px;font-weight:800;text-decoration:none;transition:top .2s ease}.skip-link:focus{top:12px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+button{font:inherit}
+.progress{position:fixed;z-index:200;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--copper),var(--teal));width:0}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,16,25,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{height:72px;width:min(calc(100% - 32px),var(--max));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:22px;color:#eaf0f3}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:13px}
+.brandmark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.18);color:var(--teal);font-size:11px}
+.navlinks{display:flex;align-items:center;gap:16px}
+.navlinks a{text-decoration:none;font-size:10px;font-weight:700;color:#8495a1;letter-spacing:.04em}
+.navlinks a.active,.navlinks a:hover{color:#fff}
+.controls{display:flex;align-items:center;gap:8px}
+.langbtn{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#a9b5bd;padding:7px 9px;border-radius:9px;font-size:10px;cursor:pointer}
+.langbtn.active{color:#081018;background:var(--teal);border-color:var(--teal)}
+.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+.hero{min-height:auto;padding:110px 0 56px;background:
+ radial-gradient(circle at 82% 18%,rgba(187,119,65,.18),transparent 26%),
+ radial-gradient(circle at 18% 80%,rgba(107,199,193,.11),transparent 24%),
+ linear-gradient(135deg,#061018,#0b1925 55%,#071019);color:#fff;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,#000,transparent 85%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:start}
+.kicker,.eyebrow{font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--copper2)}
+.hero h1{font-size:clamp(56px,7vw,92px);line-height:.95;letter-spacing:-.055em;margin:18px 0 22px}
+.hero h1 span{color:#b7c3cb}
+.hero-role{font-size:21px;font-weight:800;margin:0 0 10px;color:#e5ecef}
+.hero-copy>p{color:#9cabb6;max-width:680px;font-size:15px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;align-items:stretch}
+.hero-copy .hero-actions{display:grid;grid-template-columns:repeat(2,minmax(240px,1fr));gap:14px;max-width:920px}
+.btn{display:grid;place-items:center;min-height:56px;padding:12px 24px;border-radius:16px;text-decoration:none;font-size:13px;font-weight:800;line-height:1.15;letter-spacing:.01em;text-align:center;border:1px solid rgba(255,255,255,.16);white-space:normal;box-shadow:0 10px 30px rgba(0,0,0,.16);text-shadow:0 1px 0 rgba(0,0,0,.18)}
+.btn.primary{background:var(--copper);border-color:var(--copper);color:#111}
+.btn.secondary{color:#eef4f6;background:rgba(255,255,255,.045)}
+.hero-actions .btn{min-width:190px}
+.hero-copy .hero-actions .btn{min-width:0;width:100%}
+.contact-final .hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:stretch;justify-content:flex-start}
+.contact-final .hero-actions .btn{min-width:190px}
+.profile-card{border:1px solid rgba(255,255,255,.12);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.025));padding:24px;box-shadow:0 28px 70px rgba(0,0,0,.25);align-self:start;max-width:520px;width:100%;justify-self:end}
+.photo{width:100%;aspect-ratio:1/1;border-radius:22px;object-fit:cover;object-position:center 37%;filter:saturate(.95) contrast(.98)}
+.profile-meta{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:16px}
+.meta{border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.035);border-radius:12px;padding:10px}
+.meta strong{display:block;font-size:11px;color:#e4eaee}
+.meta span{font-size:9px;color:#798b98}
+.hero-stats{position:relative;margin-top:38px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border:1px solid rgba(255,255,255,.08);border-radius:24px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));box-shadow:0 24px 60px rgba(0,0,0,.16);align-items:stretch}
+.hero-stat{padding:28px 22px 26px;border-right:1px solid rgba(255,255,255,.07);min-height:176px;display:grid;grid-template-rows:minmax(44px,auto) minmax(58px,auto) minmax(52px,auto);align-content:center;justify-items:center;align-items:start;text-align:center;gap:8px}
+.hero-stat:last-child{border-right:0}
+.hero-stat strong{display:block;font-size:clamp(32px,3.2vw,48px);line-height:1;color:#fff;letter-spacing:-.03em;margin:0;text-align:center;align-self:end}
+.hero-stat .stat-title{display:flex;align-items:flex-start;justify-content:center;min-height:2.6em;font-size:16px;line-height:1.22;font-weight:800;color:#f1f5f7;letter-spacing:-.01em;text-align:center;max-width:10ch}
+.hero-stat .stat-caption{display:flex;align-items:flex-start;justify-content:center;min-height:3.4em;font-size:12px;line-height:1.35;color:#95a6b2;margin-top:0;text-align:center;max-width:16ch}
+.page{padding:100px 0}
+.dark{background:var(--bg);color:#eef4f6}
+.section-grid{display:grid;grid-template-columns:270px 1fr;gap:70px;align-items:start}
+.sticky{position:sticky;top:110px}
+.num{display:none !important}
+.sticky h2{font-size:40px;line-height:1.05;letter-spacing:-.04em;margin:8px 0 12px}
+.sticky p{font-size:12px;color:#778691}
+.dark .sticky p{color:#81919d}
+.stack{display:grid;gap:18px}
+.card{border:1px solid var(--line);background:#fff;border-radius:var(--radius);padding:26px;box-shadow:0 12px 34px rgba(20,40,50,.05)}
+.dark .card{background:rgba(255,255,255,.035);border-color:rgba(255,255,255,.09);box-shadow:none}
+.card h3{font-size:19px;line-height:1.2;margin:0 0 8px}
+.card h4{font-size:13px;margin:16px 0 5px}
+.card p,.card li{font-size:12px;color:#5d6c75}
+.dark .card p,.dark .card li{color:#9cabb5}
+.card ul{margin:8px 0 0;padding-left:18px}
+.card li{margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.chip{padding:6px 9px;border-radius:999px;background:#edf7f6;border:1px solid #d5ebe8;color:#42606a;font-size:9px;font-weight:800}
+.dark .chip{background:rgba(107,199,193,.08);border-color:rgba(107,199,193,.18);color:#98cbc7}
+.profile-categories{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.category{padding:22px;border-radius:18px;border:1px solid var(--line);background:#fff}
+.category .icon{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:#eef6f5;color:#2c6f6a;font-weight:800}
+.category h3{font-size:14px;margin:14px 0 6px}
+.category p{font-size:11px;color:#6e7d86;margin:0}
+.timeline{position:relative}
+.timeline:before{content:"";position:absolute;left:12px;top:12px;bottom:18px;width:1px;background:rgba(255,255,255,.12)}
+.job{position:relative;padding-left:42px;margin-bottom:22px}
+.job:before{content:"";position:absolute;left:6px;top:9px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--teal)}
+.job-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.company{font-size:10px;color:var(--copper2);font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.job h3{font-size:21px;margin:4px 0 0}
+.role{font-size:11px;color:#a7b2ba;margin:3px 0 0}
+.date{font-size:9px;color:#71828e;font-weight:800;white-space:nowrap}
+.subgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px}
+.mini{border:1px solid rgba(255,255,255,.08);border-radius:13px;background:rgba(255,255,255,.025);padding:14px}
+.mini b{display:block;font-size:10px;color:#dce5e9}
+.mini span{display:block;font-size:9px;color:#81919c;margin-top:3px}
+.edu-cert{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.credential{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line)}
+.credential:last-child{border-bottom:0}
+.credmark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:#eef5f5;color:#2e6b67;font-size:9px;font-weight:900;flex:0 0 auto}
+.credential h4{font-size:12px;margin:0 0 3px}
+.credential p{font-size:10px;margin:0;color:#78858e}
+.skill-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.skill-group{border:1px solid var(--line);border-radius:18px;background:#fff;padding:20px}
+.skill-group h3{font-size:13px;margin:0 0 12px}
+.skill-group ul{list-style:none;padding:0;margin:0}
+.skill-group li{font-size:10px;color:#66757e;padding:7px 0;border-top:1px solid #edf1f3}
+.leadership-content{display:grid;gap:18px;min-width:0}
+.leadership-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.highlight{border-left:3px solid var(--copper);padding:18px 20px;background:#fff;border-radius:0 16px 16px 0;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.highlight h3{font-size:13px;margin:0 0 6px}
+.highlight p{font-size:10.5px;color:#66757f;margin:0}
+.recognition-panel{margin-top:18px;padding:28px 30px;border-radius:22px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(135deg,rgba(187,119,65,.1),rgba(255,255,255,.025));display:grid;grid-template-columns:minmax(240px,.8fr) minmax(0,1.2fr);gap:26px;align-items:start}
+.recognition-badge{display:flex;align-items:center;gap:14px}
+.recognition-star{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(224,165,118,.45);color:var(--copper2);font-size:24px;flex:0 0 auto}
+.recognition-panel h3{font-size:24px;line-height:1.12;letter-spacing:-.03em;margin:10px 0 8px}
+.recognition-panel p{font-size:12px;line-height:1.7;margin:0;color:#7d8c95}
+.recognition-points .point{color:#75838c}
+.recognition-points .point strong{color:#5b6972}
+.recognition-points{display:grid;gap:10px}
+.recognition-points .point{padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08);font-size:11px;color:#75838c}
+.lang-avail{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.biglang{display:flex;align-items:center;gap:14px;padding:18px;border-radius:16px;border:1px solid var(--line);background:#fff}
+.biglang .code{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#e7f6f4;color:#2f6f6a;font-weight:900;font-size:11px}
+.biglang strong{display:block;font-size:12px}
+.biglang span{display:block;font-size:10px;color:#74838d}
+.docs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.doccard{border:1px solid var(--line);background:#fff;border-radius:18px;padding:20px;display:flex;flex-direction:column;min-height:170px}
+.doccard .docicon{font-size:24px}
+.doccard h3{font-size:14px;margin:13px 0 6px}
+.doccard p{font-size:10.5px;color:#6d7c86;margin:0 0 14px}
+.doccard a{margin-top:auto;text-decoration:none;font-size:10px;font-weight:800;color:#8c5e3b}
+.contact-final{padding:100px 0;background:linear-gradient(135deg,#08131d,#0e202d);color:#fff}
+.contact-box{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.contact-box h2{font-size:42px;line-height:1.08;letter-spacing:-.04em;margin:8px 0 10px}
+.contact-box p{color:#8fa0ab;font-size:12px}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+.footer{background:#050b10;color:#72828d;padding:24px 0;font-size:9px}
+.footer .wrap{display:flex;justify-content:space-between;gap:20px}
+.mobile-menu{display:none}
+
+.availability-status{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:7px 11px;border:1px solid rgba(107,199,193,.22);background:rgba(107,199,193,.07);border-radius:999px;color:#c6dcda;font-size:10px;font-weight:800;letter-spacing:.02em}
+.availability-dot{width:7px;height:7px;border-radius:50%;background:#72d3a4;box-shadow:0 0 0 4px rgba(114,211,164,.1)}
+.cred-link{display:inline-flex;margin-top:7px;text-decoration:none;font-size:9px;font-weight:800;color:#91613e}.cred-link:hover{text-decoration:underline}
+.development-card{grid-column:1/-1}.development-head{display:flex;justify-content:space-between;gap:20px}.development-head h3{margin:6px 0 0;max-width:740px}.development-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px}.development-item{display:flex;flex-direction:column;gap:6px;padding:14px;border:1px solid var(--line);border-radius:14px;background:#fafcfc}.development-item strong{font-size:10.5px;line-height:1.4}.status{width:max-content;padding:4px 7px;border-radius:999px;font-size:8px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;position:static;height:auto}.status.completed{background:#e7f6f0;color:#35705b}.status.inprogress{background:#fff3e7;color:#9a6337}
+.current-version{margin-top:auto;font-size:10px;font-weight:800;color:#4a746e}
+.contact-final{position:relative;overflow:hidden}.contact-final:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;right:-140px;top:-200px;background:radial-gradient(circle,rgba(107,199,193,.11),transparent 68%)}
+.contact-actions{position:relative;display:grid;grid-template-columns:repeat(2,minmax(150px,1fr));gap:12px;min-width:390px}.contact-action{appearance:none;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.045);color:#eef4f6;border-radius:16px;min-height:66px;padding:10px 16px;display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font:800 12px Inter,Arial,sans-serif;cursor:pointer;box-shadow:0 12px 28px rgba(0,0,0,.13);transition:transform .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease}.contact-action:first-child{background:var(--copper);color:#111;border-color:var(--copper)}.contact-action svg{width:22px;height:22px;flex:0 0 auto}.contact-action span{line-height:1}.copy-link{width:100%}
+.floating-contact{position:fixed;z-index:88;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:8px;padding:8px;border-radius:18px;background:rgba(7,16,25,.8);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(14px);box-shadow:0 18px 48px rgba(0,0,0,.22)}.floating-contact a{position:relative;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:#b9c5cc;text-decoration:none;border:1px solid transparent;transition:transform .2s ease,color .2s ease,background .2s ease,border-color .2s ease}.floating-contact svg{width:20px;height:20px}.floating-contact a[data-tooltip]:before{content:attr(data-tooltip);position:absolute;right:50px;padding:5px 8px;border-radius:7px;background:#071019;color:#fff;font-size:9px;font-weight:800;white-space:nowrap;opacity:0;pointer-events:none;transform:translateX(5px);transition:opacity .15s ease,transform .15s ease}.copy-toast{position:fixed;z-index:160;left:50%;bottom:28px;transform:translate(-50%,14px);padding:10px 14px;border-radius:999px;background:#071019;color:#fff;border:1px solid rgba(255,255,255,.12);font-size:10px;font-weight:800;box-shadow:0 12px 30px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .22s ease,transform .22s ease}.copy-toast.show{opacity:1;transform:translate(-50%,0)}
+@media(hover:hover){.card:hover,.category:hover,.skill-group:hover,.doccard:hover,.highlight:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(20,40,50,.08)}.card,.category,.skill-group,.doccard,.highlight{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}.contact-action:hover{transform:translateY(-2px);border-color:rgba(107,199,193,.35);background:rgba(107,199,193,.08);box-shadow:0 16px 34px rgba(0,0,0,.18)}.contact-action:first-child:hover{background:#ca864e;border-color:#ca864e}.floating-contact a:hover{transform:translateX(-2px);color:#fff;background:rgba(107,199,193,.09);border-color:rgba(107,199,193,.2)}.floating-contact a:hover:before{opacity:1;transform:none}}
+
+html[lang="es"] [data-lang="en"],html[lang="en"] [data-lang="es"]{display:none!important}
+@media(max-width:1100px){
+ .hero-stats{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:980px){
+ .navlinks{display:none} .hero-grid{grid-template-columns:1fr} .profile-card{max-width:520px}
+ .section-grid{grid-template-columns:1fr;gap:38px} .sticky{position:relative;top:auto}
+ .skill-groups{grid-template-columns:repeat(2,1fr)} .edu-cert,.lang-avail{grid-template-columns:1fr} .docs{grid-template-columns:1fr 1fr}
+ .sticky h2{font-size:34px}
+ .recognition-panel{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+ .wrap{width:min(calc(100% - 28px),var(--max))} .controls{margin-left:auto}
+ .hero{padding-top:98px;padding-bottom:44px} .hero h1{font-size:48px} .hero-stats{grid-template-columns:repeat(2,1fr)}
+ .hero-stat{padding:22px 18px;min-height:150px;grid-template-rows:minmax(40px,auto) minmax(50px,auto) minmax(44px,auto)}
+ .hero-stat .stat-title{font-size:14px}
+ .hero-stat .stat-caption{font-size:11px}
+ .btn{min-height:52px;padding:12px 20px;font-size:12px;white-space:normal}
+ .hero-copy .hero-actions{grid-template-columns:1fr}
+ .profile-categories,.subgrid,.leadership-grid,.skill-groups,.docs{grid-template-columns:1fr}
+ .job-head{display:block} .date{display:block;margin-top:5px}
+ .contact-box{grid-template-columns:1fr} .footer .wrap{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto} *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important} .reveal{opacity:1!important;transform:none!important;transition:none!important}
+}
+@media print{
+ .topbar,.progress{display:none!important} body{background:#fff} .hero{min-height:auto;padding:30px 0;background:#fff;color:#111}
+ .hero:before{display:none} .profile-card{display:none} .hero h1{font-size:44px;color:#111} .hero h1 span{color:#333}
+ .hero-copy>p,.hero-role{color:#333} .hero-stats{border-color:#ddd;background:#fff} .hero-stat strong{color:#111}
+ .page,.contact-final{padding:30px 0;background:#fff;color:#111} .section-grid{grid-template-columns:1fr} .sticky{position:static}
+ .card,.skill-group,.biglang,.doccard,.category{box-shadow:none} .dark .card{background:#fff;border-color:#ddd} .dark .card p,.dark .card li{color:#333}
+ .docs,.contact-final,.footer{display:none!important}
+}
+
+@media(max-width:980px){.contact-actions{min-width:0}.development-grid{grid-template-columns:1fr}.floating-contact{top:auto;right:50%;bottom:12px;transform:translateX(50%);flex-direction:row;border-radius:16px}.floating-contact a[data-tooltip]:before{display:none}.contact-final{padding-bottom:120px}}
+@media(max-width:620px){.contact-actions{grid-template-columns:1fr}.contact-action{min-height:58px}.development-grid{grid-template-columns:1fr}.availability-status{font-size:9px}.floating-contact{width:max-content;max-width:calc(100% - 28px);justify-content:center}.floating-contact a{width:40px;height:40px}}
+@media print{.floating-contact,.copy-toast,.availability-status{display:none!important}}
+
+</style>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Manuel Quinsacara Herrera","url":"https://manuelquinsacarah.github.io/","image":"https://manuelquinsacarah.github.io/assets/profile.webp","email":"mailto:mquinsacarah@outlook.com","jobTitle":"Supply Chain & Logistics Specialist","homeLocation":{"@type":"Place","name":"Antofagasta, Chile"},"sameAs":["https://www.linkedin.com/in/manuelquinsacarah"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Universidad Católica del Norte"},{"@type":"CollegeOrUniversity","name":"Pontificia Universidad Católica de Chile"}],"knowsAbout":["Supply Chain Management","Materials Management","Inventory Management","Materials Planning","Mining Logistics","SAP MM","SAP WM","Operational Excellence","Contractor Management","HSE","Lean","5S","Microsoft Excel","Power Query"]}</script>
+</head>
+<body>
+<a class="skip-link" href="#perfil">Saltar al contenido principal</a>
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <div class="nav">
+    <a class="brand" href="#inicio"><span class="brandmark">MQ</span><span>Interactive Executive Resume</span></a>
+    <nav class="navlinks">
+      <a href="#perfil" data-section="perfil">Perfil</a>
+      <a href="#experiencia" data-section="experiencia">Experiencia</a>
+      <a href="#formacion" data-section="formacion">Formación</a>
+      <a href="#competencias" data-section="competencias">Competencias</a>
+      <a href="#liderazgo" data-section="liderazgo">Liderazgo</a>
+      <a href="#documentos" data-section="documentos">Documentos</a>
+      <a href="#contacto" data-section="contacto">Contacto</a>
+    </nav>
+    <div class="controls">
+      <button class="langbtn active" id="esBtn" type="button" aria-pressed="true" aria-label="Mostrar perfil en español">ES</button>
+      <button class="langbtn" id="enBtn" type="button" aria-pressed="false" aria-label="Show profile in English">EN</button>
+    </div>
+  </div>
+</header>
+<nav class="floating-contact" aria-label="Contacto rápido">
+  <a href="mailto:mquinsacarah@outlook.com?subject=Professional%20Opportunity%20%E2%80%94%20Manuel%20Quinsacara" aria-label="Email" data-tooltip="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <a id="whatsappFloat" href="https://wa.me/56974729552?text=Hola%20Manuel%2C%20vi%20tu%20perfil%20profesional%20y%20me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20una%20oportunidad%20laboral." data-href-es="https://wa.me/56974729552?text=Hola%20Manuel%2C%20vi%20tu%20perfil%20profesional%20y%20me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20una%20oportunidad%20laboral." data-href-en="https://wa.me/56974729552?text=Hello%20Manuel%2C%20I%20saw%20your%20professional%20profile%20and%20would%20like%20to%20discuss%20a%20career%20opportunity%20with%20you." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-tooltip="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.3L3 20.2l1.4-4.9A8.4 8.4 0 1 1 20.5 11.6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.4 7.7c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c-.2.2-.1.4 0 .6.5.9 1.2 1.7 2.1 2.2.2.1.4.2.6 0l.8-1c.2-.2.4-.3.7-.2l1.9.9c.3.1.4.3.4.5 0 .3-.2 1.4-.8 1.9-.5.5-1.3.8-2.1.6-1-.2-2.5-.7-4.2-2.2-1.4-1.3-2.4-2.9-2.7-3.8-.3-.9 0-2 .5-2.6Z" fill="currentColor"/></svg></a>
+  <a href="https://www.linkedin.com/in/manuelquinsacarah" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-tooltip="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 8.2H3.3V21h3.1V8.2ZM4.8 3A1.8 1.8 0 1 0 4.8 6.6 1.8 1.8 0 0 0 4.8 3ZM21 13.7c0-3.9-2.1-5.7-4.9-5.7-2.2 0-3.3 1.2-3.8 2v-1.8H9.2V21h3.1v-6.3c0-1.7.3-3.3 2.4-3.3 2 0 2.1 1.9 2.1 3.4V21H20v-7.3h1Z" fill="currentColor"/></svg></a>
+  <a href="assets/CV_ATS_Manuel_Quinsacara.pdf" target="_blank" rel="noopener" aria-label="CV ATS PDF" data-tooltip="CV ATS"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 3v5h5M9 12h6M9 16h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+</nav>
+<div class="copy-toast" id="copyToast" role="status" aria-live="polite"><span data-lang="es">Enlace copiado ✓</span><span data-lang="en">Link copied ✓</span></div>
+
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <div class="availability-status" aria-label="Disponibilidad profesional">
+        <span class="availability-dot" aria-hidden="true"></span>
+        <span data-lang="es">Disponible para nuevas oportunidades</span>
+        <span data-lang="en">Open to new opportunities</span>
+      </div>
+      <h1>Manuel<br><span>Quinsacara Herrera</span></h1>
+      <div class="hero-role" data-lang="es">Especialista en Supply Chain y Logística</div>
+      <div class="hero-role" data-lang="en">Supply Chain & Logistics Specialist</div>
+      <p data-lang="es">Gestión de materiales e inventarios · Operaciones mineras · SAP MM/WM · Planificación de materiales · Mejora continua.</p>
+      <p data-lang="en">Materials & Inventory Management · Mining Operations · SAP MM/WM · Materials Planning · Continuous Improvement.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#perfil" data-lang="es">Ver perfil interactivo</a>
+        <a class="btn primary" href="#perfil" data-lang="en">View interactive profile</a>
+        <a class="btn secondary" href="assets/Perfil_Profesional_Manuel_Quinsacara.pdf" download data-lang="es">Perfil Profesional PDF</a>
+        <a class="btn secondary" href="assets/Perfil_Profesional_Manuel_Quinsacara.pdf" download data-lang="en">Professional Profile PDF</a>
+        <a class="btn secondary" href="assets/CV_ATS_Manuel_Quinsacara.pdf" download data-lang="es">CV ATS PDF</a>
+        <a class="btn secondary" href="assets/CV_ATS_Manuel_Quinsacara.pdf" download data-lang="en">ATS CV PDF</a>
+        <a class="btn secondary" href="assets/CV_ATS_Manuel_Quinsacara.docx" download>DOCX</a>
+      </div>
+    </div>
+
+    <aside class="profile-card reveal">
+      <img class="photo" src="assets/profile.webp" alt="Manuel Quinsacara Herrera" width="800" height="800" fetchpriority="high">
+      <div class="profile-meta">
+        <div class="meta"><strong>Antofagasta</strong><span>Chile</span></div>
+        <div class="meta"><strong>~5 años</strong><span>Supply Chain & Operations</span></div>
+        <div class="meta"><strong>SAP MM/WM</strong><span>Operational advanced</span></div>
+        <div class="meta"><strong>Mining</strong><span>Operations</span></div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="wrap hero-stats">
+    <div class="hero-stat reveal"><strong data-count="500" data-prefix="+">+500</strong><span class="stat-title" data-lang="es">Entregas mensuales</span><span class="stat-title" data-lang="en">Monthly deliveries</span><span class="stat-caption" data-lang="es">flujo operacional sostenido</span><span class="stat-caption" data-lang="en">sustained operational flow</span></div>
+    <div class="hero-stat reveal"><strong data-count="100000" data-prefix="+">+100.000</strong><span class="stat-title">SKU</span><span class="stat-caption" data-lang="es">universo de inventario</span><span class="stat-caption" data-lang="en">inventory universe</span></div>
+    <div class="hero-stat reveal"><strong data-count="100" data-prefix="~">~100</strong><span class="stat-title" data-lang="es">Personas coordinadas</span><span class="stat-title" data-lang="en">People coordinated</span><span class="stat-caption" data-lang="es">indirectamente</span><span class="stat-caption" data-lang="en">indirectly</span></div>
+    <div class="hero-stat reveal"><strong data-count="50" data-prefix="~">~50</strong><span class="stat-title" data-lang="es">Tractocamiones</span><span class="stat-title" data-lang="en">Tractor-trailers</span><span class="stat-caption" data-lang="es">coordinados</span><span class="stat-caption" data-lang="en">coordinated</span></div>
+    <div class="hero-stat reveal"><strong data-count="30" data-prefix="~" data-suffix="%">~30%</strong><span class="stat-title" data-lang="es">Menos no conformidades</span><span class="stat-title" data-lang="en">Fewer non-conformities</span><span class="stat-caption" data-lang="es">por estandarización y control</span><span class="stat-caption" data-lang="en">through standardization and control</span></div>
+    <div class="hero-stat reveal"><strong>22,5 h</strong><span class="stat-title" data-lang="es">Ahorro mensual</span><span class="stat-title" data-lang="en">Monthly savings</span><span class="stat-caption" data-lang="es">menos consolidación manual</span><span class="stat-caption" data-lang="en">less manual consolidation</span></div>
+  </div>
+</section>
+
+<section class="page" id="perfil">
+  <div class="wrap section-grid">
+    <aside class="sticky reveal">
+      
+      <h2 data-lang="es">Perfil profesional</h2><h2 data-lang="en">Professional profile</h2>
+      <p data-lang="es">Una lectura rápida de dónde aporto valor.</p><p data-lang="en">A quick view of where I create value.</p>
+    </aside>
+    <div class="stack">
+      <article class="card reveal">
+        <h3 data-lang="es">Supply Chain con experiencia minera y foco en ejecución.</h3>
+        <h3 data-lang="en">Supply Chain experience in mining with a strong execution focus.</h3>
+        <p data-lang="es">Ingeniero Comercial con aproximadamente 5 años de experiencia en Supply Chain, logística operacional, gestión de materiales e inventarios en minería de gran escala, principalmente en Minera Escondida | BHP. Mi experiencia se ha desarrollado en operaciones de alta exigencia, gestionando logística end-to-end, transporte, materiales críticos, inventarios, contratistas y planificación de requerimientos para mantenimiento, outages y shutdowns.</p>
+        <p data-lang="en">Business and management professional with a degree in Commercial Engineering and approximately 5 years of experience in Supply Chain, operational logistics, materials management, and inventory management in large-scale mining, primarily at Minera Escondida | BHP. My background includes end-to-end logistics, transportation, critical materials, inventory control, contractor coordination, and materials planning for maintenance, outages, and shutdowns.</p>
+      </article>
+
+      <div class="profile-categories">
+        <article class="category reveal"><div class="icon">SC</div><h3>Supply Chain & Logistics</h3><p data-lang="es">Recepción, almacenamiento, despacho, transporte, entrega en terreno, logística inversa y transferencias.</p><p data-lang="en">Receiving, storage, dispatch, transportation, field delivery, reverse logistics and transfers.</p></article>
+        <article class="category reveal"><div class="icon">MI</div><h3>Materials & Inventory</h3><p data-lang="es">Universo superior a 100.000 SKU y 10.000–20.000 materiales con movimiento recurrente.</p><p data-lang="en">Inventory universe above 100,000 SKUs and 10,000–20,000 materials with recurring movement.</p></article>
+        <article class="category reveal"><div class="icon">MP</div><h3>Materials Planning</h3><p data-lang="es">Mantenimiento, outages y shutdowns con horizontes de planificación de hasta 6–8 semanas.</p><p data-lang="en">Maintenance, outages and shutdown planning with horizons up to 6–8 weeks.</p></article>
+        <article class="category reveal"><div class="icon">SAP</div><h3>SAP & Data</h3><p data-lang="es">SAP MM/WM, Excel avanzado, Power Query, Power Pivot, VBA, SAP Scripts y Power BI.</p><p data-lang="en">SAP MM/WM, advanced Excel, Power Query, Power Pivot, VBA, SAP Scripts and Power BI.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page dark" id="experiencia">
+  <div class="wrap section-grid">
+    <aside class="sticky reveal">
+      
+      <h2 data-lang="es">Experiencia</h2><h2 data-lang="en">Experience</h2>
+      <p data-lang="es">La operación es el centro de la historia profesional.</p><p data-lang="en">Operations are at the center of my professional story.</p>
+    </aside>
+    <div class="timeline">
+      <article class="job card reveal">
+        <div class="job-head"><div><div class="company">BHP · Minera Escondida</div><h3>Supervisor Home Delivery</h3><div class="role" data-lang="es">Especialista en Logística Operacional</div><div class="role" data-lang="en">Operational Logistics Specialist</div></div><div class="date">2022–2025</div></div>
+        <div class="subgrid">
+          <div class="mini"><b>Operational scope</b><span>~100 people · 4 contractors · ~50 tractor-trailers</span></div>
+          <div class="mini"><b>Delivery</b><span>500+ monthly deliveries across mine, plant, workshops and projects</span></div>
+          <div class="mini"><b>Materials</b><span>100,000+ SKU universe · 10,000–20,000 recurring movement</span></div>
+          <div class="mini"><b>Planning</b><span>Maintenance · outages · shutdowns · 6–8 weeks</span></div>
+        </div>
+        <h4 data-lang="es">Gestión operacional</h4><h4 data-lang="en">Operational management</h4>
+        <ul data-lang="es">
+          <li>Administré logística end-to-end: recepción, almacenamiento, despacho, transporte, entrega en terreno, logística inversa y transferencias entre bodegas.</li>
+          <li>Utilicé SAP MM/WM para inventarios, movimientos de mercancía, reservas, compras, warehouse management y physical inventory.</li>
+          <li>Monitoreé WOPIFOT (Orden de Trabajo Perfecta, Completa y a Tiempo), OTIF, Service Level, Lead Time, Inventory Accuracy y disponibilidad de flota.</li>
+        </ul>
+        <ul data-lang="en">
+          <li>Managed end-to-end logistics: receiving, storage, dispatch, transportation, field delivery, reverse logistics and inter-warehouse transfers.</li>
+          <li>Used SAP MM/WM for inventory management, goods movements, reservations, purchasing, warehouse management and physical inventory.</li>
+          <li>Monitored WOPIFOT (Perfect, Complete and On-Time Work Order), OTIF, Service Level, Lead Time, Inventory Accuracy and fleet availability.</li>
+        </ul>
+        <h4 data-lang="es">Logros y gestión</h4><h4 data-lang="en">Achievements & management</h4>
+        <ul data-lang="es">
+          <li>Reduje ~30% las no conformidades asociadas a entregas mediante estandarización de procesos, controles en terreno y mejora de trazabilidad.</li>
+          <li>Implementé procedimientos para Proof of Delivery (POD) y estandarización de puntos de entrega.</li>
+          <li>Ejercí funciones como Contract Operator y participé en control operacional y contractual de servicios superiores a USD 1 millón.</li>
+          <li>Realicé control presupuestario de gerencia y seguimiento de iniciativas vinculadas a una meta corporativa de ahorro de USD 5 millones.</li>
+          <li>Apliqué BHP Operating System (BOS), Lean, 5S, trabajo estándar, Voice of Customer y mejora continua.</li>
+          <li>Mantuve una trayectoria sin accidentes con lesión a las personas asociados a las operaciones bajo mi gestión/supervisión durante mi periodo en Minera Escondida.</li>
+        </ul>
+        <ul data-lang="en">
+          <li>Reduced delivery-related non-conformities by approximately 30% through process standardization, field controls and improved traceability.</li>
+          <li>Implemented Proof of Delivery (POD) procedures and standardized delivery points.</li>
+          <li>Worked as a Contract Operator, supporting operational and contractual control of services valued at more than USD 1 million.</li>
+          <li>Performed management budget control and followed initiatives linked to a corporate USD 5 million savings target.</li>
+          <li>Applied BHP Operating System (BOS), Lean, 5S, standard work, Voice of Customer and continuous improvement.</li>
+          <li>Maintained a record without injury accidents associated with the operations under my management/supervision during my time at Minera Escondida.</li>
+        </ul>
+        <div class="chips"><span class="chip">SAP MM</span><span class="chip">SAP WM</span><span class="chip">Materials Planning</span><span class="chip">Contractor Management</span><span class="chip">BOS</span><span class="chip">Lean</span><span class="chip">HSE</span></div>
+      </article>
+
+      <article class="job card reveal">
+        <div class="job-head"><div><div class="company">BHP · Warehousing & Ports</div><h3>BHP Graduate Program</h3><div class="role">Warehousing · Inventory · Logistics</div></div><div class="date">2021–2022</div></div>
+        <ul data-lang="es">
+          <li>Rotaciones en recepción, almacenamiento, inventario, consolidación y logística, desarrollando una visión end-to-end del flujo de materiales.</li>
+          <li>Conciliación físico/SAP, análisis de diferencias, ajustes, investigación de causas y control de ubicaciones.</li>
+          <li>Optimicé procedimientos y guías One Page; las mejoras implementadas contribuyeron a aumentar aproximadamente 12% la eficiencia del proceso.</li>
+          <li>Automaticé reportes diarios y semanales mediante SAP, Excel, Power Query, Power Pivot, VBA, macros, SAP Scripts y Power BI.</li>
+          <li>Reduje aproximadamente 22,5 horas mensuales de consolidación manual de información.</li>
+          <li>Estuve a cargo de la primera fase de implementación de BHP Operating System (BOS) en Bodega Coloso.</li>
+          <li>Desde noviembre de 2021 asumí temporalmente funciones de supervisión; al finalizar el programa fui contratado permanentemente en logística.</li>
+        </ul>
+        <ul data-lang="en">
+          <li>Rotated across receiving, storage, inventory, consolidation and logistics, developing an end-to-end understanding of material flows.</li>
+          <li>Supported physical/SAP reconciliation, variance analysis, adjustments, root-cause investigation and location control.</li>
+          <li>Optimized procedures and One Page guides; implemented improvements contributed to an approximate 12% increase in process efficiency.</li>
+          <li>Automated daily and weekly reporting using SAP, Excel, Power Query, Power Pivot, VBA, macros, SAP Scripts and Power BI.</li>
+          <li>Reduced manual information consolidation by approximately 22.5 hours per month.</li>
+          <li>Led the first phase of BHP Operating System (BOS) implementation at Coloso Warehouse.</li>
+          <li>From November 2021, temporarily assumed supervisory responsibilities and transitioned into a permanent logistics role after the program.</li>
+        </ul>
+      </article>
+
+      <article class="job card reveal">
+        <div class="job-head"><div><div class="company">S y R Ingeniería</div><h3 data-lang="es">Supervisor de Obra</h3><h3 data-lang="en">Site Supervisor</h3></div><div class="date">2018–2019</div></div>
+        <ul data-lang="es"><li>Supervisé directamente ~15 trabajadores en múltiples obras menores ejecutadas en paralelo.</li><li>Controlé planificación, avance físico, plazos, calidad, recepción de materiales, stock e inventario.</li><li>Coordiné aproximadamente 4 proveedores/subcontratistas y proyectos con valores promedio cercanos a CLP 140 millones por proyecto.</li><li>Mantuve 365 días sin accidentes con lesión a las personas durante toda mi permanencia.</li></ul>
+        <ul data-lang="en"><li>Directly supervised ~15 workers across multiple small-scale projects running in parallel.</li><li>Controlled planning, physical progress, deadlines, quality, materials receiving, stock and inventory.</li><li>Coordinated approximately 4 suppliers/subcontractors and projects with average values close to CLP 140 million per project.</li><li>Completed the full period with 365 days without injury accidents.</li></ul>
+      </article>
+
+      <article class="job card reveal">
+        <div class="job-head"><div><div class="company">Transportes NISSI</div><h3 data-lang="es">Práctica Profesional</h3><h3 data-lang="en">Professional Internship</h3><div class="role">Logistics & Administration</div></div><div class="date">2018</div></div>
+        <p data-lang="es">Recepción, control y despacho, distribución, atención de clientes, digitalización documental y gestión de bases de datos en Excel.</p>
+        <p data-lang="en">Receiving, control and dispatch, distribution, customer service, document digitization and database management in Excel.</p>
+      </article>
+
+      <article class="job card reveal">
+        <div class="job-head"><div><div class="company">S y R Ingeniería</div><h3 data-lang="es">Práctica Inicial</h3><h3 data-lang="en">Initial Internship</h3><div class="role">Administration & Management Support</div></div><div class="date">2017</div></div>
+        <p data-lang="es">Apoyo en contratos, finiquitos, bases de datos, remuneraciones, proyectos, reclutamiento y selección.</p>
+        <p data-lang="en">Support with contracts, termination documents, databases, payroll-related records, projects, recruitment and selection.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="formacion">
+  <div class="wrap section-grid">
+    <aside class="sticky reveal"><h2 data-lang="es">Educación & certificaciones</h2><h2 data-lang="en">Education & certifications</h2><p data-lang="es">Formación académica y credenciales que complementan la experiencia.</p><p data-lang="en">Academic background and credentials that reinforce practical experience.</p></aside>
+    <div class="edu-cert">
+      <article class="card reveal">
+        <h3 data-lang="es">Educación</h3><h3 data-lang="en">Education</h3>
+        <div class="credential"><div class="credmark">PUC</div><div><h4>Pontificia Universidad Católica de Chile</h4><p data-lang="es">Diplomado en Liderazgo y Comportamiento Organizacional · 2025–2026 · En curso</p><p data-lang="en">Diploma in Leadership and Organizational Behavior · 2025–2026 · In progress</p></div></div>
+        <div class="credential"><div class="credmark">UCN</div><div><h4>Universidad Católica del Norte</h4><p data-lang="es">Ingeniería Comercial · Licenciatura en Ciencias de la Administración · Ingeniero Comercial con Distinción · Seminario de Marketing: 7,0</p><p data-lang="en">Commercial Engineering · Bachelor's Degree in Management Sciences · Commercial Engineer with Distinction · Marketing Seminar: 7.0</p></div></div>
+      </article>
+      <article class="card reveal">
+        <h3 data-lang="es">Certificaciones seleccionadas</h3><h3 data-lang="en">Selected certifications</h3>
+        <div class="credential"><div class="credmark">CSCMP</div><div><h4>Supply Chain Foundations: The Essentials Professional Certificate</h4><p>CSCMP · LinkedIn Learning · 2026</p><a class="cred-link" href="https://www.linkedin.com/in/manuelquinsacarah/details/certifications/" target="_blank" rel="noopener noreferrer"><span data-lang="es">Ver en LinkedIn ↗</span><span data-lang="en">View on LinkedIn ↗</span></a></div></div>
+        <div class="credential"><div class="credmark">AI</div><div><h4>Google AI Professional Certificate</h4><p>Google · Coursera · 2026</p><a class="cred-link" href="https://coursera.org/verify/professional-cert/DT11GNFPZHZT" target="_blank" rel="noopener noreferrer"><span data-lang="es">Ver credencial ↗</span><span data-lang="en">Verify credential ↗</span></a></div></div>
+        <div class="credential"><div class="credmark">BI</div><div><h4>Inteligencia de Negocios con MS Excel y Power BI Desktop</h4><p>Es Vanguardia E.I.R.L. · 2018</p></div></div>
+        <div class="credential"><div class="credmark">XL</div><div><h4>Excel Intermedio Avanzado</h4><p>Es Vanguardia E.I.R.L. · 2017</p></div></div>
+        <div class="credential"><div class="credmark">EF</div><div><h4>EF SET English Certificate</h4><p>47/100 · B1 Intermediate · 2020</p><a class="cred-link" href="https://cert.efset.org/2yssdX" target="_blank" rel="noopener noreferrer"><span data-lang="es">Ver credencial ↗</span><span data-lang="en">Verify credential ↗</span></a></div></div>
+        <div class="credential"><div class="credmark">SAP</div><div><h4>SAP Business Analyst Professional Certificate</h4><p>SAP · Coursera · <span data-lang="es">En curso</span><span data-lang="en">In progress</span></p></div></div>
+      </article>
+      <article class="card development-card reveal">
+        <div class="development-head">
+          <div><div class="company" data-lang="es">DESARROLLO PROFESIONAL · 2025–2026</div><div class="company" data-lang="en">PROFESSIONAL DEVELOPMENT · 2025–2026</div>
+          <h3 data-lang="es">Especialización continua orientada a Supply Chain, SAP, IA aplicada y liderazgo.</h3><h3 data-lang="en">Continuous specialization focused on Supply Chain, SAP, applied AI and leadership.</h3></div>
+        </div>
+        <div class="development-grid">
+          <div class="development-item"><span class="status completed" data-lang="es">Completado</span><span class="status completed" data-lang="en">Completed</span><strong>CSCMP Supply Chain Foundations: The Essentials</strong></div>
+          <div class="development-item"><span class="status completed" data-lang="es">Completado</span><span class="status completed" data-lang="en">Completed</span><strong>Google AI Professional Certificate</strong></div>
+          <div class="development-item"><span class="status inprogress" data-lang="es">En curso</span><span class="status inprogress" data-lang="en">In progress</span><strong>SAP Business Analyst Professional Certificate</strong></div>
+          <div class="development-item"><span class="status inprogress" data-lang="es">En curso</span><span class="status inprogress" data-lang="en">In progress</span><strong>Diplomado PUC · Liderazgo y Comportamiento Organizacional</strong></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="competencias">
+  <div class="wrap section-grid">
+    <aside class="sticky reveal"><h2 data-lang="es">Competencias & herramientas</h2><h2 data-lang="en">Skills & tools</h2><p data-lang="es">Sin porcentajes arbitrarios: capacidades agrupadas por uso real.</p><p data-lang="en">No arbitrary percentages: capabilities grouped by practical use.</p></aside>
+    <div class="skill-groups">
+      <article class="skill-group reveal"><h3>Supply Chain</h3><ul><li>Materials Management</li><li>Inventory Management</li><li>Materials Planning</li><li>Mining Logistics</li><li>Warehouse Operations</li></ul></article>
+      <article class="skill-group reveal"><h3>SAP</h3><ul><li>SAP MM</li><li>SAP WM</li><li>ERP / S/4HANA</li><li>Goods Movements</li><li>Reservations / STO</li><li>Physical Inventory</li></ul></article>
+      <article class="skill-group reveal"><h3>Data & Automation</h3><ul><li>Microsoft Excel avanzado</li><li>Power Query</li><li>Power Pivot</li><li>VBA / Macros</li><li>SAP Scripts</li><li>Power BI básico</li></ul></article>
+      <article class="skill-group reveal"><h3>Operational Excellence</h3><ul><li>BHP Operating System (BOS)</li><li>Lean</li><li>5S</li><li>Kaizen</li><li>RCA / 5 Why / Ishikawa</li><li>PDCA / DMAIC</li></ul></article>
+      <article class="skill-group reveal"><h3>Management</h3><ul><li>Contractor Management</li><li>Contract Operator</li><li>Budget Control</li><li>SLA / KPI Management</li><li>Operational Planning</li></ul></article>
+      <article class="skill-group reveal"><h3>HSE & Leadership</h3><ul><li>Critical Controls</li><li>Leadership in the Field</li><li>Risk Management</li><li>Team Management</li><li>Effective Communication</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="liderazgo">
+  <div class="wrap section-grid">
+    <aside class="sticky reveal"><h2 data-lang="es">Liderazgo, HSE & gestión</h2><h2 data-lang="en">Leadership, HSE & management</h2><p data-lang="es">Responsabilidades transversales que explican el nivel de exposición operacional.</p><p data-lang="en">Cross-functional responsibilities that explain the level of operational exposure.</p></aside>
+    <div class="leadership-content">
+      <div class="leadership-grid">
+      <article class="highlight reveal"><h3 data-lang="es">Personas y contratistas</h3><h3 data-lang="en">People & contractors</h3><p data-lang="es">Coordinación indirecta de ~100 trabajadores, hasta 4 empresas contratistas y trabajo permanente con administradores de contrato y supervisores.</p><p data-lang="en">Indirect coordination of ~100 workers, up to 4 contractors, and continuous collaboration with contract administrators and supervisors.</p></article>
+      <article class="highlight reveal"><h3>HSE</h3><p data-lang="es">Charlas, ART, inspecciones, controles críticos, gestión de riesgos, observaciones preventivas, liderazgo en terreno y estándares/procedimientos.</p><p data-lang="en">Safety talks, risk assessments, inspections, critical controls, risk management, preventive observations, field leadership and standards/procedures.</p></article>
+      <article class="highlight reveal"><h3 data-lang="es">Gestión contractual</h3><h3 data-lang="en">Contract management</h3><p data-lang="es">Contract Operator, seguimiento de SLA y performance, control operacional, validación de servicios e incidentes, con contratos individuales superiores a USD 1 millón.</p><p data-lang="en">Contract Operator, SLA and performance follow-up, operational control, service validation and incident management, with individual services above USD 1 million.</p></article>
+      <article class="highlight reveal"><h3 data-lang="es">Gestión y presupuesto</h3><h3 data-lang="en">Management & budget</h3><p data-lang="es">Control, seguimiento y análisis de presupuesto de gerencia, incluyendo iniciativas vinculadas a una meta corporativa de ahorro de USD 5 millones.</p><p data-lang="en">Management budget control, monitoring and analysis, including initiatives linked to a corporate USD 5 million savings target.</p></article>
+    </div>
+
+    <div class="recognition-panel reveal">
+      <div>
+        <div class="recognition-badge">
+          <div class="recognition-star">★</div>
+          <div>
+            <div class="eyebrow" data-lang="es">RECONOCIMIENTO DESTACADO · BHP · 2022</div>
+            <div class="eyebrow" data-lang="en">HIGHLIGHT RECOGNITION · BHP · 2022</div>
+            <h3>BHP Operating System (BOS) & 5S</h3>
+          </div>
+        </div>
+        <p data-lang="es">Reconocimiento recibido en Bodega Coloso por participación destacada en la implementación y aplicación de prácticas de BOS, mejora continua y metodología 5S.</p>
+        <p data-lang="en">Recognition received at Coloso Warehouse for outstanding participation in the implementation and application of BOS practices, continuous improvement and 5S methodology.</p>
+      </div>
+      <div class="recognition-points">
+        <div class="point" data-lang="es"><strong>Valor agregado:</strong> evidencia práctica de liderazgo operacional, disciplina en ejecución y adopción de estándares de excelencia.</div>
+        <div class="point" data-lang="en"><strong>Added value:</strong> practical evidence of operational leadership, disciplined execution and adoption of excellence standards.</div>
+        <div class="point" data-lang="es"><strong>Contexto:</strong> reconocimiento interno vinculado a implementación de BOS, mejora continua y metodología 5S en Bodega Coloso.</div>
+        <div class="point" data-lang="en"><strong>Context:</strong> internal recognition linked to BOS implementation, continuous improvement and 5S practices at Coloso Warehouse.</div>
+      </div>
+    </div>
+
+    <div class="lang-avail" style="margin-top:18px">
+      <article class="card reveal">
+        <h3 data-lang="es">Idiomas</h3><h3 data-lang="en">Languages</h3>
+        <div class="biglang"><div class="code">ES</div><div><strong data-lang="es">Español</strong><strong data-lang="en">Spanish</strong><span>Native / Bilingual</span></div></div>
+        <div class="biglang" style="margin-top:10px"><div class="code">EN</div><div><strong data-lang="es">Inglés</strong><strong data-lang="en">English</strong><span>B1 · EF SET 47/100 · Professional Working</span></div></div>
+      </article>
+      <article class="card reveal">
+        <h3 data-lang="es">Disponibilidad</h3><h3 data-lang="en">Availability</h3>
+        <ul data-lang="es"><li>Antofagasta · Calama · Santiago · otras regiones</li><li>Turnos 4x3 · 7x7 · 5x2</li><li>Traslado nacional y viajes por trabajo</li><li>Licencia clase B y pasaporte vigentes</li></ul>
+        <ul data-lang="en"><li>Antofagasta · Calama · Santiago · other regions</li><li>4x3 · 7x7 · 5x2 shifts</li><li>National relocation and business travel</li><li>Valid Class B driver's license and passport</li></ul>
+      </article>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="documentos">
+  <div class="wrap section-grid">
+    <aside class="sticky reveal"><h2 data-lang="es">Documentos profesionales</h2><h2 data-lang="en">Professional documents</h2><p data-lang="es">Cada formato cumple una función distinta dentro del proceso de selección.</p><p data-lang="en">Each format serves a different purpose in the recruiting process.</p></aside>
+    <div class="docs">
+      <article class="doccard reveal"><div class="docicon">◉</div><h3 data-lang="es">Perfil interactivo</h3><h3 data-lang="en">Interactive profile</h3><p data-lang="es">La experiencia completa en formato visual, navegable y bilingüe.</p><p data-lang="en">The complete experience in a visual, navigable and bilingual format.</p><span class="current-version" data-lang="es">Estás viendo esta versión ✓</span><span class="current-version" data-lang="en">You are viewing this version ✓</span></article>
+      <article class="doccard reveal"><div class="docicon">▤</div><h3 data-lang="es">Perfil Profesional PDF</h3><h3 data-lang="en">Professional Profile PDF</h3><p data-lang="es">Versión ejecutiva de 4 páginas para compartir directamente con personas y recruiters.</p><p data-lang="en">Four-page executive version for direct sharing with people and recruiters.</p><a href="assets/Perfil_Profesional_Manuel_Quinsacara.pdf" download data-lang="es">Descargar PDF ↓</a><a href="assets/Perfil_Profesional_Manuel_Quinsacara.pdf" download data-lang="en">Download PDF ↓</a></article>
+      <article class="doccard reveal"><div class="docicon">▦</div><h3>CV ATS</h3><p data-lang="es">Versión sobria para portales de empleo y sistemas de seguimiento de candidatos. Disponible en PDF y DOCX.</p><p data-lang="en">ATS-friendly version for job portals and applicant tracking systems. Available in PDF and DOCX.</p><a href="assets/CV_ATS_Manuel_Quinsacara.pdf" download data-lang="es">Descargar PDF ↓</a><a href="assets/CV_ATS_Manuel_Quinsacara.pdf" download data-lang="en">Download PDF ↓</a><a href="assets/CV_ATS_Manuel_Quinsacara.docx" download style="margin-top:10px">DOCX ↓</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="contact-final" id="contacto">
+  <div class="wrap contact-box">
+    <div><div class="eyebrow" data-lang="es">CONTACTO DIRECTO</div><div class="eyebrow" data-lang="en">DIRECT CONTACT</div><h2 data-lang="es">Disponible para oportunidades en Supply Chain y operaciones.</h2><h2 data-lang="en">Open to opportunities in Supply Chain and operations.</h2><p data-lang="es">Elige el canal que te resulte más cómodo.</p><p data-lang="en">Choose the channel that works best for you.</p></div>
+    <div class="contact-actions">
+      <a class="contact-action" href="mailto:mquinsacarah@outlook.com?subject=Professional%20Opportunity%20%E2%80%94%20Manuel%20Quinsacara" aria-label="Enviar correo a Manuel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Email</span></a>
+      <a class="contact-action" id="whatsappContact" href="https://wa.me/56974729552?text=Hola%20Manuel%2C%20vi%20tu%20perfil%20profesional%20y%20me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20una%20oportunidad%20laboral." data-href-es="https://wa.me/56974729552?text=Hola%20Manuel%2C%20vi%20tu%20perfil%20profesional%20y%20me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20una%20oportunidad%20laboral." data-href-en="https://wa.me/56974729552?text=Hello%20Manuel%2C%20I%20saw%20your%20professional%20profile%20and%20would%20like%20to%20discuss%20a%20career%20opportunity%20with%20you." target="_blank" rel="noopener noreferrer" aria-label="Contactar a Manuel por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.3L3 20.2l1.4-4.9A8.4 8.4 0 1 1 20.5 11.6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.4 7.7c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c-.2.2-.1.4 0 .6.5.9 1.2 1.7 2.1 2.2.2.1.4.2.6 0l.8-1c.2-.2.4-.3.7-.2l1.9.9c.3.1.4.3.4.5 0 .3-.2 1.4-.8 1.9-.5.5-1.3.8-2.1.6-1-.2-2.5-.7-4.2-2.2-1.4-1.3-2.4-2.9-2.7-3.8-.3-.9 0-2 .5-2.6Z" fill="currentColor"/></svg><span>WhatsApp</span></a>
+      <a class="contact-action" href="https://www.linkedin.com/in/manuelquinsacarah" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn de Manuel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 8.2H3.3V21h3.1V8.2ZM4.8 3A1.8 1.8 0 1 0 4.8 6.6 1.8 1.8 0 0 0 4.8 3ZM21 13.7c0-3.9-2.1-5.7-4.9-5.7-2.2 0-3.3 1.2-3.8 2v-1.8H9.2V21h3.1v-6.3c0-1.7.3-3.3 2.4-3.3 2 0 2.1 1.9 2.1 3.4V21H20v-7.3h1Z" fill="currentColor"/></svg><span>LinkedIn</span></a>
+      <button class="contact-action copy-link" type="button" id="copyProfileLink" aria-label="Copiar enlace del perfil"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span data-lang="es">Copiar perfil</span><span data-lang="en">Copy profile</span></button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="wrap"><span>© 2026 Manuel Quinsacara Herrera</span><span>Supply Chain · Logistics · Materials Management</span></div></footer>
+
+<script>
+const body=document.body,esBtn=document.getElementById('esBtn'),enBtn=document.getElementById('enBtn');
+function setLang(lang){
+  const en=lang==='en'; body.classList.toggle('en',en);
+  esBtn.classList.toggle('active',!en); enBtn.classList.toggle('active',en);
+  esBtn.setAttribute('aria-pressed',String(!en)); enBtn.setAttribute('aria-pressed',String(en));
+  document.documentElement.lang=en?'en':'es';
+  document.querySelectorAll('[data-href-es][data-href-en]').forEach(el=>{el.href=en?el.dataset.hrefEn:el.dataset.hrefEs;});
+  localStorage.setItem('cv-lang',lang);
+}
+esBtn.addEventListener('click',()=>setLang('es')); enBtn.addEventListener('click',()=>setLang('en'));
+setLang(localStorage.getItem('cv-lang')||'es');
+
+const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const reveals=document.querySelectorAll('.reveal');
+if(reduced) reveals.forEach(x=>x.classList.add('visible'));
+else{
+ const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
+ reveals.forEach(x=>io.observe(x));
+}
+
+window.addEventListener('scroll',()=>{
+ const d=document.documentElement,max=d.scrollHeight-d.clientHeight;
+ document.getElementById('progress').style.width=(max?d.scrollTop/max*100:0)+'%';
+});
+
+const sections=['perfil','experiencia','formacion','competencias','liderazgo','documentos','contacto'].map(id=>document.getElementById(id)).filter(Boolean);
+const links=[...document.querySelectorAll('.navlinks a')];
+const navIO=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{
+  if(e.isIntersecting){
+   links.forEach(a=>{const active=a.dataset.section===e.target.id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')});
+  }
+ })
+},{rootMargin:'-30% 0px -60% 0px',threshold:0});
+sections.forEach(s=>navIO.observe(s));
+
+if(!reduced){
+ const nums=document.querySelectorAll('[data-count]');
+ const cio=new IntersectionObserver(entries=>entries.forEach(e=>{
+  if(!e.isIntersecting)return;
+  const el=e.target,target=parseFloat(el.dataset.count),prefix=el.dataset.prefix||'',suffix=el.dataset.suffix||'';
+  const start=performance.now(),dur=900;
+  function tick(now){
+   const p=Math.min((now-start)/dur,1),v=target*(1-Math.pow(1-p,3));
+   const dec=String(target).includes('.')?1:0;
+   el.textContent=prefix+v.toLocaleString('es-CL',{maximumFractionDigits:dec,minimumFractionDigits:dec})+suffix;
+   if(p<1)requestAnimationFrame(tick)
+  }
+  requestAnimationFrame(tick);cio.unobserve(el)
+ }),{threshold:.5});
+ nums.forEach(n=>cio.observe(n));
+}
+
+const copyBtn=document.getElementById('copyProfileLink'),copyToast=document.getElementById('copyToast');
+async function copyProfileUrl(){
+ const url='https://manuelquinsacarah.github.io/';
+ try{await navigator.clipboard.writeText(url)}catch(err){const t=document.createElement('textarea');t.value=url;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}
+ if(copyToast){copyToast.classList.add('show');setTimeout(()=>copyToast.classList.remove('show'),1700)}
+}
+copyBtn?.addEventListener('click',copyProfileUrl);
+
+</script>
+</body>
+</html>
