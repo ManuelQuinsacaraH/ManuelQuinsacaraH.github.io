@@ -1,0 +1,41 @@
+name: Portfolio button update
+
+on:
+  push:
+    branches:
+      - portfolio-update-2026-08-21
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: portfolio-update-2026-08-21
+      - name: Replace DOCX with Portfolio
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          old = '<a class="btn secondary" href="assets/CV_ATS_Manuel_Quinsacara.docx" download>DOCX</a>'
+          new = '<a class="btn secondary" href="portfolio.html" data-lang="es">Portafolio</a>\n        <a class="btn secondary" href="portfolio.html" data-lang="en">Portfolio</a>'
+          if old not in s:
+              raise SystemExit('Hero DOCX button not found')
+          s = s.replace(old, new, 1)
+          s = s.replace('Disponible en PDF y DOCX.</p>', 'Disponible en PDF.</p>', 1)
+          s = s.replace('Available in PDF and DOCX.</p>', 'Available in PDF.</p>', 1)
+          s = s.replace('<a href="assets/CV_ATS_Manuel_Quinsacara.docx" download style="margin-top:10px">DOCX ↓</a>', '', 1)
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Replace DOCX button with portfolio link"
+          git push origin portfolio-update-2026-08-21
