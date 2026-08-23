@@ -1,0 +1,104 @@
+name: Finalize ATS website publication
+
+on:
+  push:
+    branches:
+      - update-ats-cvs-2026
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out update branch
+        uses: actions/checkout@v4
+        with:
+          ref: update-ats-cvs-2026
+          fetch-depth: 0
+
+      - name: Update bilingual CV links
+        shell: python
+        run: |
+          from pathlib import Path
+
+          index = Path('index.html')
+          html = index.read_text(encoding='utf-8')
+
+          old_float = '<a href="assets/CV_ATS_Manuel_Quinsacara.pdf" target="_blank" rel="noopener" aria-label="CV ATS PDF" data-tooltip="CV ATS">'
+          new_float = '<a id="cvFloat" href="assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf" data-href-es="assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf" data-href-en="assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf" target="_blank" rel="noopener" aria-label="CV ATS PDF" data-tooltip="CV ATS">'
+          assert html.count(old_float) == 1, html.count(old_float)
+          html = html.replace(old_float, new_float)
+
+          old_es_hero = '<a class="btn secondary" href="assets/CV_ATS_Manuel_Quinsacara.pdf" download data-lang="es">CV ATS PDF</a>'
+          old_en_hero = '<a class="btn secondary" href="assets/CV_ATS_Manuel_Quinsacara.pdf" download data-lang="en">ATS CV PDF</a>'
+          assert html.count(old_es_hero) == 1, html.count(old_es_hero)
+          assert html.count(old_en_hero) == 1, html.count(old_en_hero)
+          html = html.replace(old_es_hero, '<a class="btn secondary" href="assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf" download data-lang="es">CV ATS PDF</a>')
+          html = html.replace(old_en_hero, '<a class="btn secondary" href="assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf" download data-lang="en">ATS Resume PDF</a>')
+
+          old_es_docs = '<a href="assets/CV_ATS_Manuel_Quinsacara.pdf" download data-lang="es">Descargar PDF ↓</a>'
+          old_en_docs = '<a href="assets/CV_ATS_Manuel_Quinsacara.pdf" download data-lang="en">Download PDF ↓</a>'
+          assert html.count(old_es_docs) == 1, html.count(old_es_docs)
+          assert html.count(old_en_docs) == 1, html.count(old_en_docs)
+          html = html.replace(old_es_docs, '<a href="assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf" download data-lang="es">Descargar CV ATS ES ↓</a>')
+          html = html.replace(old_en_docs, '<a href="assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf" download data-lang="en">Download ATS Resume EN ↓</a>')
+
+          assert 'assets/CV_ATS_Manuel_Quinsacara.pdf' not in html
+          assert html.count('assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf') == 3
+          assert html.count('assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf') == 3
+          index.write_text(html, encoding='utf-8')
+
+          readme = Path('README.md')
+          text = readme.read_text(encoding='utf-8')
+          text = text.replace(
+              'Perfil Profesional PDF y CV ATS en PDF/DOCX',
+              'Perfil Profesional PDF y CV ATS bilingües en PDF'
+          )
+          old_tree = '''    ├── Perfil_Profesional_Manuel_Quinsacara.pdf
+    ├── CV_ATS_Manuel_Quinsacara.pdf
+    └── CV_ATS_Manuel_Quinsacara.docx'''
+          new_tree = '''    ├── Perfil_Profesional_Manuel_Quinsacara.pdf
+    ├── Manuel_Quinsacara_CV_ATS_General_ES.pdf
+    └── Manuel_Quinsacara_Resume_ATS_General_EN.pdf'''
+          assert old_tree in text
+          text = text.replace(old_tree, new_tree)
+          readme.write_text(text, encoding='utf-8')
+
+      - name: Remove legacy and temporary files
+        shell: bash
+        run: |
+          rm -f assets/CV_ATS_Manuel_Quinsacara.pdf
+          rm -f assets/CV_ATS_Manuel_Quinsacara.docx
+          rm -f assets/Manuel_Quinsacara_International_Resume_EN.pdf
+          rm -f assets/Manuel_Quinsacara_International_Resume_EN.docx
+          rm -rf .tmp
+          rm -f .github/workflows/finalize-ats-site.yml
+
+      - name: Validate publication state
+        shell: bash
+        run: |
+          test -s assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf
+          test -s assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf
+          grep -q 'Manuel_Quinsacara_CV_ATS_General_ES.pdf' index.html
+          grep -q 'Manuel_Quinsacara_Resume_ATS_General_EN.pdf' index.html
+          ! grep -q 'assets/CV_ATS_Manuel_Quinsacara.pdf' index.html
+          test ! -e assets/CV_ATS_Manuel_Quinsacara.pdf
+          test ! -e assets/CV_ATS_Manuel_Quinsacara.docx
+          test ! -e assets/Manuel_Quinsacara_International_Resume_EN.pdf
+          test ! -e assets/Manuel_Quinsacara_International_Resume_EN.docx
+          echo "Spanish PDF: $(stat -c%s assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf) bytes"
+          echo "English PDF: $(stat -c%s assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf) bytes"
+          sha256sum assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf
+          sha256sum assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf
+
+      - name: Commit final website state
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Finalize bilingual ATS resume publication"
+          git push origin HEAD:update-ats-cvs-2026
