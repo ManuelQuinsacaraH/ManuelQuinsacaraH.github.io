@@ -24,8 +24,8 @@ Disponible en **Español | English**.
 - Diseño responsive para escritorio y móvil
 - Transiciones y microinteracciones con soporte `prefers-reduced-motion`
 - Contacto directo mediante Email, WhatsApp y LinkedIn
-- Barra flotante de contacto y acceso al CV ATS
-- Perfil Profesional PDF y CV ATS en PDF/DOCX
+- Barra flotante de contacto y acceso al CV ATS según idioma seleccionado
+- Perfil Profesional PDF y CV ATS bilingües en PDF
 - Credenciales verificables seleccionadas
 - Open Graph / Twitter Card para compartir el perfil
 - Schema.org / JSON-LD
@@ -37,6 +37,8 @@ Disponible en **Español | English**.
 ```text
 ManuelQuinsacaraH.github.io/
 ├── index.html
+├── _includes/
+│   └── site-main.html
 ├── README.md
 ├── robots.txt
 ├── sitemap.xml
@@ -45,9 +47,11 @@ ManuelQuinsacaraH.github.io/
     ├── favicon.svg
     ├── og-preview.jpg
     ├── Perfil_Profesional_Manuel_Quinsacara.pdf
-    ├── CV_ATS_Manuel_Quinsacara.pdf
-    └── CV_ATS_Manuel_Quinsacara.docx
+    ├── Manuel_Quinsacara_CV_ATS_General_ES.pdf
+    └── Manuel_Quinsacara_Resume_ATS_General_EN.pdf
 ```
+
+`index.html` aplica únicamente la selección ES/EN de los CV públicos; la fuente completa del perfil se conserva en `_includes/site-main.html`.
 
 ## Contacto
 
