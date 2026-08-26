@@ -1,0 +1,28 @@
+name: Publish professional profile V2
+on:
+  push:
+    branches: [profile-audit]
+    paths:
+      - '.profile-upload/**'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          files=(.profile-upload/part*.txt)
+          if [[ ${#files[@]} -lt 1 || ! -f .profile-upload/READY ]]; then exit 0; fi
+          cat .profile-upload/part*.txt | base64 -d > assets/Perfil_Profesional_Manuel_Quinsacara.pdf
+          test "$(head -c 5 assets/Perfil_Profesional_Manuel_Quinsacara.pdf)" = "%PDF-"
+          rm -rf .profile-upload
+          rm -f .github/workflows/publish-profile-v2.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Update professional profile to V2" || exit 0
+          git push
