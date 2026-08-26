@@ -1,0 +1,67 @@
+name: Finalise ATS website label
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/finalise-ats-label.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  finalise:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Replace descriptive portfolio label with website URL
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --quiet pymupdf
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+
+          jobs = [
+              (Path('assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf'), 'Portafolio - Proyectos de Cadena de Abastecimiento y Analítica: manuelquinsacarah.github.io'),
+              (Path('assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf'), 'Portfolio - Supply Chain & Analytics Projects: manuelquinsacarah.github.io'),
+          ]
+
+          for path, old_text in jobs:
+              doc = fitz.open(path)
+              if doc.page_count != 2:
+                  raise RuntimeError(f'{path}: expected 2 pages, got {doc.page_count}')
+              page = doc[0]
+              matches = page.search_for(old_text)
+              if matches:
+                  rect = matches[0]
+                  for r in matches[1:]:
+                      rect |= r
+              else:
+                  url_matches = page.search_for('manuelquinsacarah.github.io')
+                  if not url_matches:
+                      raise RuntimeError(f'{path}: website URL not found')
+                  u = url_matches[0]
+                  rect = fitz.Rect(45, u.y0 - 2, page.rect.width - 45, u.y1 + 2)
+              rect = fitz.Rect(max(45, rect.x0 - 8), rect.y0 - 1, min(page.rect.width - 45, rect.x1 + 8), rect.y1 + 1)
+              page.add_redact_annot(rect, fill=(1, 1, 1))
+              page.apply_redactions()
+              page.insert_textbox(rect, 'manuelquinsacarah.github.io', fontsize=8.5, fontname='helv', color=(0.35, 0.37, 0.39), align=1)
+              tmp = path.with_suffix('.tmp.pdf')
+              doc.save(tmp, garbage=4, deflate=True, clean=True)
+              doc.close()
+              tmp.replace(path)
+              check = fitz.open(path)
+              if check.page_count != 2 or not check[0].search_for('manuelquinsacarah.github.io'):
+                  raise RuntimeError(f'{path}: validation failed')
+              check.close()
+          PY
+          rm -f .github/workflows/finalise-ats-label.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Finalise ATS website label" || exit 0
+          git push
