@@ -1,8 +1,8 @@
 %PDF-1.4
-% ReportLab Generated PDF document (opensource)
+%ASCII Compressed ATS PDF
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R
+/F1 2 0 R /F2 3 0 R /F3 4 0 R
 >>
 endobj
 2 0 obj
@@ -17,17 +17,12 @@ endobj
 endobj
 4 0 obj
 <<
-/Contents 9 0 R /MediaBox [ 0 0 612 792 ] /Parent 8 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
 >>
 endobj
 5 0 obj
 <<
-/Contents 10 0 R /MediaBox [ 0 0 612 792 ] /Parent 8 0 R /Resources <<
+/Contents 10 0 R /MediaBox [ 0 0 612 792 ] /Parent 9 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 /Trans <<
 
@@ -37,573 +32,43 @@ endobj
 endobj
 6 0 obj
 <<
-/PageMode /UseNone /Pages 8 0 R /Type /Catalog
+/Contents 11 0 R /MediaBox [ 0 0 612 792 ] /Parent 9 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
 >>
 endobj
 7 0 obj
 <<
-/Author (Manuel Quinsacara Herrera) /CreationDate (D:20260823020614+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260823020614+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Manuel Quinsacara ATS CV ES) /Trapped /False
+/PageMode /UseNone /Pages 9 0 R /Type /Catalog
 >>
 endobj
 8 0 obj
 <<
-/Count 2 /Kids [ 4 0 R 5 0 R ] /Type /Pages
+/Author (Manuel Quinsacara Herrera) /CreationDate (D:20260826201422+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260826201422+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (ATS General V2.3) /Title (CV ATS General - Cadena de Abastecimiento y Operaciones) /Trapped /False
 >>
 endobj
 9 0 obj
 <<
-/Length 8783
+/Count 2 /Kids [ 5 0 R 6 0 R ] /Type /Pages
 >>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
-q
-1 0 0 1 47.76 734.88 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1 Tm /F2 17 Tf 18 TL 117.531 0 Td (MANUEL QUINSACARA HERRERA) Tj T* -117.531 0 Td ET
-Q
-Q
-q
-1 0 0 1 47.76 722.88 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.4 Tm /F2 9.6 Tf 11 TL 15.4992 0 Td (SUPPLY CHAIN | MATERIALES | INVENTARIOS | LOG\315STICA | SAP MM/WM | EXCELENCIA OPERACIONAL) Tj T* -15.4992 0 Td ET
-Q
-Q
-q
-1 0 0 1 47.76 711.88 cm
-q
-.368627 .427451 .470588 rg
-BT 1 0 0 1 0 1.3 Tm /F1 7.7 Tf 9 TL 27.0244 0 Td (Antofagasta, Chile | +56 9 7472 9552 | mquinsacarah@outlook.com | linkedin.com/in/manuelquinsacarah | manuelquinsacarah.github.io) Tj T* -27.0244 0 Td ET
-Q
-Q
-q
-1 0 0 1 47.76 706.08 cm
-q
-.8 w
-1 J
-.090196 .231373 .403922 RG
-n 0 0 m 516.48 0 l S
-Q
-Q
-q
-1 0 0 1 47.76 688.58 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.4 Tm /F2 10.6 Tf 12 TL (PERFIL PROFESIONAL) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 686.53 cm
-q
-.55 w
-1 J
-.682353 .741176 .792157 RG
-n 0 0 m 516.48 0 l S
-Q
-Q
-q
-1 0 0 1 47.76 632.78 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 42.8 Tm /F1 8.45 Tf 10.25 TL (Ingeniero Comercial, Licenciado en Ciencias de la Administraci\363n, con aproximadamente cinco a\361os de experiencia directa en Supply) Tj T* (Chain, log\355stica operacional, materiales e inventarios en miner\355a de gran escala, principalmente en BHP | Minera Escondida. Experiencia) Tj T* (en log\355stica end-to-end, planificaci\363n de materiales para mantenimiento y shutdowns, transporte y distribuci\363n, gesti\363n de contratistas y) Tj T* (proveedores, SAP MM/WM, KPIs, control presupuestario, reportabilidad y mejora continua. Trayectoria coordinando aproximadamente 50) Tj T* (tractocamiones, m\341s de 500 entregas mensuales, alrededor de 100 trabajadores contratistas y un universo superior a 100.000 SKU.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 615.28 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.4 Tm /F2 10.6 Tf 12 TL (COMPETENCIAS CLAVE) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 613.23 cm
-q
-.55 w
-1 J
-.682353 .741176 .792157 RG
-n 0 0 m 516.48 0 l S
-Q
-Q
-q
-1 0 0 1 47.76 569.73 cm
-q
-BT 1 0 0 1 0 32.55 Tm 10.25 TL /F1 8.45 Tf 0 0 0 rg (Supply Chain Operations | End-to-End Logistics | Materials Management | Inventory Management | Materials Planning | Warehouse) Tj T* (Operations | Transportation & Distribution | Contractor & Supplier Management | SAP MM/WM | PR/PO | MIGO | Physical & Cycle) Tj T* (Inventory | OTIF | Service Level | Inventory Accuracy | Budget & Management Reporting | BOS | Lean | RCA | Excel avanzado | Power) Tj T* (Query | Power Pivot | VBA | Power BI b\341sico-pr\341ctico) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 552.23 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.4 Tm /F2 10.6 Tf 12 TL (EXPERIENCIA PROFESIONAL) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 550.18 cm
-q
-.55 w
-1 J
-.682353 .741176 .792157 RG
-n 0 0 m 516.48 0 l S
-Q
-Q
-q
-1 0 0 1 47.76 535.98 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.2 Tm /F2 10 Tf 11.2 TL (BHP | Minera Escondida) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 524.88 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.2 Tm /F2 9.3 Tf 10.5 TL (Supervisor Home Delivery | Log\355stica Operacional) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 515.58 cm
-q
-.368627 .427451 .470588 rg
-BT 1 0 0 1 0 1.3 Tm /F1 7.7 Tf 9 TL (Antofagasta, Chile | Mar 2022 - Oct 2025) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 494.28 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Supervis\351 indirectamente alrededor de 100 trabajadores contratistas y coordin\351 hasta cuatro empresas externas, administrando una) Tj T* -1.5 0 Td (operaci\363n de aproximadamente 50 tractocamiones y m\341s de 500 entregas mensuales.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 473.53 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Gestion\351 log\355stica end-to-end para mina, planta, talleres, bodegas, campamento y proyectos: recepci\363n, almacenamiento, despacho,) Tj T* -1.5 0 Td (transporte, entrega en terreno, log\355stica inversa, transferencias, seguimiento de carga y cierre documental.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 452.78 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Trabaj\351 con un universo superior a 100.000 SKU y movimiento recurrente aproximado de 10.000 a 20.000 materiales; gestion\351 criticidad,) Tj T* -1.5 0 Td (stockouts, backorders, safety stock, exceso y obsolescencia.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 432.03 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Planifiqu\351 requerimientos desde Work Orders, planes de mantenimiento, criticidad y lead time; apoy\351 mantenciones mayores, outages y) Tj T* -1.5 0 Td (shutdowns con horizontes aproximados de 6 a 8 semanas.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 411.28 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Utilic\351 SAP MM/WM a nivel operacional avanzado en Material Master, PR/PO, MIGO, Goods Receipt/Issue, reservas, Stock Transfers,) Tj T* -1.5 0 Td (inventarios f\355sicos/c\355clicos, Warehouse Management, STO y Maintenance Work Orders.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 390.53 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Monitore\351 OTIF, WOPIFOT, Service Level, Delivery Compliance, OTD, Lead Time, Inventory Accuracy y disponibilidad/utilizaci\363n de flota;) Tj T* -1.5 0 Td (realic\351 seguimiento de ejecuci\363n y desviaciones presupuestarias.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 369.78 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Ejerc\355 como Contract Operator habilitado; particip\351 en control de servicios individuales superiores a USD 1 mill\363n, incluido uno de) Tj T* -1.5 0 Td (aproximadamente USD 2,4 millones, con seguimiento de SLA, performance, dotaci\363n, flota y validaci\363n de servicios.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 349.03 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Reduje aproximadamente 30% las no conformidades de entrega mediante controles, seguimiento y estandarizaci\363n; implement\351 dos) Tj T* -1.5 0 Td (procedimientos para Proof of Delivery/puntos de entrega y un reporte diario automatizado.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 328.28 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Apliqu\351 liderazgo visible, ART, inspecciones y controles cr\355ticos; durante mi per\355odo no se registraron accidentes con lesi\363n asociados a) Tj T* -1.5 0 Td (las operaciones bajo mi gesti\363n/supervisi\363n.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 314.08 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.2 Tm /F2 10 Tf 11.2 TL (BHP | Minera Escondida) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 302.98 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.2 Tm /F2 9.3 Tf 10.5 TL (BHP Graduate Program - Gerencia de Bodegas y Puertos) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 293.68 cm
-q
-.368627 .427451 .470588 rg
-BT 1 0 0 1 0 1.3 Tm /F1 7.7 Tf 9 TL (Antofagasta, Chile | Mar 2021 - Feb 2022) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 272.38 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Rot\351 por recepci\363n, almacenamiento, inventarios, consolidaci\363n y log\355stica; ejecut\351 conciliaci\363n f\355sico-SAP, an\341lisis de diferencias,) Tj T* -1.5 0 Td (ajustes, investigaci\363n de causas y control de ubicaciones.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 251.63 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Simplifiqu\351 procedimientos a gu\355as operacionales One Page; el trabajo del equipo se asoci\363 a una mejora aproximada de 12% en) Tj T* -1.5 0 Td (eficiencia del proceso.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 230.88 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Automatic\351 reportes de planificaci\363n/performance con SAP, Excel, Power Query, Power Pivot, VBA, macros y SAP Scripts, reduciendo) Tj T* -1.5 0 Td (aproximadamente 22,5 horas mensuales de consolidaci\363n manual.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 210.13 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Estuve a cargo de la primera fase de implementaci\363n de BOS en Bodega Coloso y, desde noviembre de 2021, asum\355 temporalmente) Tj T* -1.5 0 Td (funciones de supervisi\363n antes de pasar a log\355stica de forma permanente.) Tj T* ET
-Q
-Q
- 
-endstream
 endobj
 10 0 obj
 <<
-/Length 8516
+/Length 3579 /Filter [/ASCII85Decode /FlateDecode]
+
 >>
 stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
-q
-1 0 0 1 47.76 741.68 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.2 Tm /F2 10 Tf 11.2 TL (S y R Ingenier\355a) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 730.58 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.2 Tm /F2 9.3 Tf 10.5 TL (Supervisor de Obra) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 721.28 cm
-q
-.368627 .427451 .470588 rg
-BT 1 0 0 1 0 1.3 Tm /F1 7.7 Tf 9 TL (Chile | May 2018 - May 2019) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 699.98 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td -0.025577 Tw (Supervis\351 aproximadamente 15 trabajadores y coordin\351 alrededor de cuatro proveedores/subcontratistas en obras simult\341neas; planifiqu\351) Tj T* 0 Tw -1.5 0 Td (actividades y control\351 plazos, calidad, materiales, stock e inventario.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 679.23 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Gestion\351 proyectos con valor promedio aproximado de CLP 140 millones por proyecto mediante Excel y Microsoft Project; implement\351) Tj T* -1.5 0 Td (procedimientos de control de materiales y resoluci\363n de problemas mediante RCA.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 658.48 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Complet\351 365 d\355as sin accidentes con lesi\363n mediante supervisi\363n en terreno, charlas de seguridad, ART/AST, inspecciones y control) Tj T* -1.5 0 Td (preventivo de riesgos.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 644.28 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.2 Tm /F2 10 Tf 11.2 TL (Transportes NISSI) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 633.18 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.2 Tm /F2 9.3 Tf 10.5 TL (Pr\341ctica Profesional - Log\355stica y Administraci\363n) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 623.88 cm
-q
-.368627 .427451 .470588 rg
-BT 1 0 0 1 0 1.3 Tm /F1 7.7 Tf 9 TL (Antofagasta, Chile | Jan 2018 - May 2018) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 612.33 cm
-q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 1.5 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Apoy\351 recepci\363n, control, despacho y distribuci\363n; atend\355 clientes y digitalic\351 documentaci\363n y bases de datos mediante Microsoft Excel.) Tj T* -1.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 47.76 598.13 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.2 Tm /F2 10 Tf 11.2 TL (S y R Ingenier\355a) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 587.03 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.2 Tm /F2 9.3 Tf 10.5 TL (Pr\341ctica Inicial - Administraci\363n y Apoyo de Gesti\363n) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 577.73 cm
-q
-.368627 .427451 .470588 rg
-BT 1 0 0 1 0 1.3 Tm /F1 7.7 Tf 9 TL (Providencia, Chile | Jan 2017 - Mar 2017) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 556.43 cm
-q
-BT 1 0 0 1 2 11.25 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 11.25 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Apoy\351 administraci\363n de contratos, documentaci\363n de remuneraciones, bases de datos, atenci\363n de clientes internos, proyectos y) Tj T* -1.5 0 Td (procesos de reclutamiento/selecci\363n.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 538.93 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.4 Tm /F2 10.6 Tf 12 TL (EDUCACI\323N) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 536.88 cm
-q
-.55 w
-1 J
-.682353 .741176 .792157 RG
-n 0 0 m 516.48 0 l S
-Q
-Q
-q
-1 0 0 1 47.76 514.98 cm
-q
-BT 1 0 0 1 0 11.25 Tm 9.7 TL /F2 8.15 Tf .090196 .435294 .439216 rg (Diplomado en Liderazgo y Comportamiento Organizacional:) Tj /F1 8.15 Tf 0 0 0 rg ( Pontificia Universidad Cat\363lica de Chile | En curso | Nov 2025 - Sep 2026) Tj T* (\(t\351rmino estimado\)) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 503.83 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.55 Tm /F1 8.15 Tf 9.7 TL (Ingenier\355a Comercial - Licenciado en Ciencias de la Administraci\363n: Universidad Cat\363lica del Norte | Titulaci\363n: Dec 2018 | Con Distinci\363n) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 486.33 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.4 Tm /F2 10.6 Tf 12 TL (CERTIFICACIONES Y DESARROLLO) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 484.28 cm
-q
-.55 w
-1 J
-.682353 .741176 .792157 RG
-n 0 0 m 516.48 0 l S
-Q
-Q
-q
-1 0 0 1 47.76 472.03 cm
-q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 1.5 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (CSCMP Supply Chain Foundations: The Essentials Professional Certificate - CSCMP / LinkedIn Learning | 2026.) Tj T* -1.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 47.76 461.03 cm
-q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 1.5 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Google AI Professional Certificate - Google / Coursera | Jun 2026.) Tj T* -1.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 47.76 450.03 cm
-q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 1.5 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (SAP Business Analyst Professional Certificate - SAP / Coursera | En curso.) Tj T* -1.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 47.76 439.03 cm
-q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 1.5 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Supply Chain Management Specialization - Rutgers University / Coursera | En curso.) Tj T* -1.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 47.76 428.03 cm
-q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 10 1.5 Tm /F1 8.25 Tf 9.75 TL 1.5 0 Td (Microsoft Excel Professional Certificate - Microsoft / Coursera | En curso.) Tj T* -1.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 47.76 417.03 cm
-q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 10 1.5 Tm 1.5 0 Td 9.75 TL /F1 8.25 Tf 0 0 0 rg (Business Intelligence with MS Excel & Power BI Desktop - Es Vanguardia | 2018; Excel Intermedio-Avanzado - Es Vanguardia | 2017.) Tj T* -1.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 47.76 399.53 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.4 Tm /F2 10.6 Tf 12 TL (HERRAMIENTAS Y METODOLOG\315AS) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 397.48 cm
-q
-.55 w
-1 J
-.682353 .741176 .792157 RG
-n 0 0 m 516.48 0 l S
-Q
-Q
-q
-1 0 0 1 47.76 375.58 cm
-q
-BT 1 0 0 1 0 11.25 Tm 9.7 TL /F2 8.15 Tf .090196 .435294 .439216 rg (SAP:) Tj /F1 8.15 Tf 0 0 0 rg ( SAP ERP / S/4HANA MM/WM - nivel operacional avanzado \(~4,5 a\361os\). MM01/02/03; ME21N/22N/23N; ME51N/52N/53N; MIGO;) Tj T* (MB51/52; MMBE; MI01/02/04/07; LX03; LT01/LT22; IW33/IW39; ZMM; SAP Scripts.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 354.73 cm
-q
-BT 1 0 0 1 0 11.25 Tm 9.7 TL /F2 8.15 Tf .090196 .435294 .439216 rg (Excel:) Tj /F1 8.15 Tf 0 0 0 rg ( Avanzado: Power Query, Power Pivot, VBA, macros, tablas din\341micas, XLOOKUP/BUSCARX, INDEX/MATCH, dashboards,) Tj T* (conexiones y automatizaci\363n.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 343.58 cm
-q
-BT 1 0 0 1 0 1.55 Tm 9.7 TL /F2 8.15 Tf .090196 .435294 .439216 rg (Power BI:) Tj /F1 8.15 Tf 0 0 0 rg ( B\341sico-pr\341ctico: preparaci\363n de datos, visualizaciones, dashboards y an\341lisis operacional.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 332.43 cm
-q
-BT 1 0 0 1 0 1.55 Tm 9.7 TL /F2 8.15 Tf .090196 .435294 .439216 rg (Otras herramientas:) Tj /F1 8.15 Tf 0 0 0 rg ( Microsoft Project, Visio, SharePoint, Teams y AutoCAD b\341sico/de apoyo.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 311.58 cm
-q
-BT 1 0 0 1 0 11.25 Tm 9.7 TL /F2 8.15 Tf .090196 .435294 .439216 rg (Metodolog\355as:) Tj /F1 8.15 Tf 0 0 0 rg ( BHP Operating System \(BOS\), Lean, 5S, Kaizen, Standard Work, Visual Management, Voice of Customer, Field Leadership,) Tj T* (Critical Controls, RCA, 5 Why, Ishikawa, PDCA y DMAIC.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 294.08 cm
-q
-.090196 .231373 .403922 rg
-BT 1 0 0 1 0 1.4 Tm /F2 10.6 Tf 12 TL (IDIOMAS, RECONOCIMIENTO Y DISPONIBILIDAD) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 292.03 cm
-q
-.55 w
-1 J
-.682353 .741176 .792157 RG
-n 0 0 m 516.48 0 l S
-Q
-Q
-q
-1 0 0 1 47.76 270.13 cm
-q
-BT 1 0 0 1 0 11.25 Tm 9.7 TL /F2 8.15 Tf .090196 .435294 .439216 rg (Idiomas:) Tj /F1 8.15 Tf 0 0 0 rg ( Espa\361ol nativo. Ingl\351s B1 Intermediate certificado \(EF SET 47/100\); Reading B2, Listening B1; lectura t\351cnica funcional y fluidez oral) Tj T* (en desarrollo.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 258.98 cm
-q
-BT 1 0 0 1 0 1.55 Tm 9.7 TL /F2 8.15 Tf .090196 .435294 .439216 rg (Reconocimiento:) Tj /F1 8.15 Tf 0 0 0 rg ( BHP | Bodega Coloso - implementaci\363n y aplicaci\363n de BOS y 5S | 2022.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 47.76 238.13 cm
-q
-BT 1 0 0 1 0 11.25 Tm 9.7 TL /F2 8.15 Tf .090196 .435294 .439216 rg (Disponibilidad:) Tj /F1 8.15 Tf 0 0 0 rg ( Antofagasta, Calama, Santiago y otras regiones; turnos 4x3, 7x7 y 5x2; viajes nacionales/internacionales; relocalizaci\363n) Tj T* (internacional sujeta a v\355a migratoria compatible; licencia Clase B y pasaporte vigente.) Tj T* ET
-Q
-Q
- 
+GhU,>gN)&i&UjCTbY+tC=W/Ia?EKR@'P0(o6s6=u8X3UO^k`mJ^sKT)9p]Y14f;q3'e%Q%B&iI5g*?kcI6E"iBsTGkf_YVSaOof94$L!=mBH7(Z[5`6XVYf^IduZVSY,6X/D";tG@V-fGQgkogZeIPbd)T(NUJF158Xi7(2mMERU'6-ZZQQ4%^QCDplInucHpTX,<T<0m-&h;EBRO1GLuGEeRU_OR]s9-X/jq(j;59(^t+!J0,s)Jf/rnEkm"gOh/%<!oU4g"U"tN-m[uW]p"IPKQ<WQ3[Y@sORhTtGOm<KurMGe-fu8W8cIh4NA@8"'kNDHi`HoZ*_j6WcF#mZ7bZ='\>:e[e\9<A0Skga/GWo9VY3(oOT$>pci]Z.d>g8UWE](C<kNBn#S[5MROcBf*#3/#.Pki;bMPO6YE87_[FC"XqDWnZ4YAcjiRK$H6>Bs=e2R7GOa5i$[)rLq4gWO`,7&dcX)kNk<_l!/`&5`>Wrd^!]YW%6YqL&V+KV(";-/@N8^]0)3dQjdmQD[&3$=rd+pbJS)a"f[cH'F/YG.of9EUsjP%E>P^5;W80ZIJ+_V$?n8h(?UIND/fI>>)!=s,C*OdW%7N#1#t1b.Jo)7lgsg<hGU=6@,3I([U^-GrAkMbpJ?8RjYE.<T,%*hspK6:[2rmk!c*'%U%\D?c]O'XnE-W:>K/o=$LtH7GfEH0YSUk<qM=cZ+:U*<"TY.0A)Nd,3&6uaXqO+GVYKbWQ'*t\J6jnE)Ir%2NKa?Os3qCW^7;E'!LcV6@'im^O='h`26F^84Zq"fu+D4,a4IGgpdGFl7c"&L!PeS2HHG]aF,,h6GYc%H&?U3[$;CM5!o>qP5-jK?HVLJ#Sllhg[Ap[2_gA\83@rd/@I9Da=Rp]6l^[Sp6(<*?K#^di-o&0ga\SVeaC6C5l*J8AYYVBN9<K^"_pC@-E6VsP7W^Xnb#B0)f6I,'(Qa2GT[VGE9I<Pn5q18DB&(9hVhaYn*)E%]Mo0IT>Jue&Eog+>Y8J(pe/8GX9#DTZW"B(j&QIb4[^V4qJBRb,2<OmhMsUr!dIBaff"I"dZs2L4i@R/QdIf2A_^b\R-tRf"f:akM?+tb6JVV)G8Z)o<?;\BAEe<M^VZOU/:^e1_+6>e[);mI]DD.Os,_"sf=?(<WcF0j6rAj#3G7<1gU":NOCWJWD=t)JlTcKaa+L[&r]CT_Qfj^Ap$?-KT<-[e0mPuFGeImPrX'M+&"O>?RR#W8L4.KWpX+[Q@q6&FA4M1e0]_KH?do_f(";joe2B(B(AeF?Kn^k0P-'U=Hooh/C1#h07Flsj,77_'X*c/up$/Ea#8&>rC;rc1hl`TTlqLIa]1/MZY)6^sc@ZZhoaXEmn!$E8"3s'5UVXT0K72U(o+[3A/FsgZJnL?JG,O.D4c5e#s7QNj!9@q4$u<^Qjl4uS:P1/aTeC\X8TC4e8:hc[M!lt4,()N/$:#"C/KJ*\LNH.)Z5=_Mj3-+g:F)a#\kNllRr35eo<)ABm2tiq$BZ)I2h!D'E1c$'`/gJ['GcBBrf0_MBuJt84lf@RG_58i(k:Jk([?QjNVZr!E12T,o`Wk'?HNM<ilq;O6qE[1q&01CO:NNhDMoS^C-tVtSB<\[Rk_sIl!E"+jA4M7<Vg-R0$9cq_u0VN<FnPT$Ou3;C>g:T>Fe9"%JlM?QnPj)@2@D9>25gfa9SjiR1<.X8dSTV/d,/#N7pNJGZhsT)-T^-guBos6HTI7%4b9I[t.9\"R%S+m"dNlX*rqA:/s2;h*sTGiK;IPVfs\1Q0':5pI!<U)gBJ[Yb/XpOf>rNO4)FT89g(E#S^QHOu]H+oKeD+_(0[Y[t+l8,;66uA4&/-+X&\g0jkl;i/oZQf:g)g(+8C#9iog89=E!OgAin_F'2AL1R5ca.Gg^%*c;(BjqNpF`uT@R%SI<I*(%h$HOaud*5cN7VP"Flo,_TDk^V10BE&1@TBgt*$uXr)[ibM_9t`KaReh6R<Fep7>;*J1dC/G?^P>MKf/7feHX3Cu<WMAO\<a(\@c$>?bDK^M;Q/bZ^4'gU/i7NE0/dMu,.A+jj"^(Le3(u,nAm+\e*8N^)0RJ2^i6qJUk`1/C)kZsS8h'M=R359J.Hp!2<1p-9R3V?iBp5iXu1*l\ZM2Ek$mo[SR*EjC,gZP%u4=H"P7!3hL%luTr7.[dFd)*C3G6_#7Q(r`;R"TnW-2emH$Ju,C?.M-J7A+0CL)[ES]#$a+RXB0rK$U4h7sPa3-I=A`;%R^*E,7#UPAt)*L1;,;L@CPaQMH5ZVc5fi6[H&(G8AnAHU%]'g3k\Kc;?)mte_'W`C7Hh$Ou7K,pSfn]$PS_O)^VZ2<<MP<S2J=<BEOLZam&I^rSM41`[dCb<qAR:hQ%,C(-jTJ6S3beg8;2n"4h(Hrt7kG*KK0c`)3U@YeG/>L^2DPp0DNcQ2>JD436IL^+&mQ<qDN6?9V`2A4b*KT_$LV"9fcdJ*Y*kS`4Y]'jV<H[5,W9p%,llEfT21;l"N50baeP(J8!PZ<E)Dbkce][65'-c63p$2^jZt"ug'3r?O(-5KX\L7WnVEH:1k;mP_@t[EH,Kf($F#;;0d*C&gq-XYG5068Zr=OTj<N!.eilUqb)YGJG>QO8Z1Ns>Nr,,%EMg2\RN`M''dX#E%R2C0T*(h]&dfdh@H^(8!CU9-1(`177UAR+VR>'N2/P%0nDmt@?u3,u?=Tqs!YQHjT%p>R$Z4PCC&))&06T>P5TO=NEpfZ4a=)LO%>0nu"Ha6l?S/;sgIdDI$ub6`(JBFRTW(;JMQMcsXUNG::QL9;KYKD9G4I)d54ToRp.i7*@g<s%@dNZZkYn@R=%l#RrY/jIK0u]u2hAeE!ATtSED_b$VFEs;4P098#XmonOrj*G%4F=c'MN%D==:4InZCMZ?&[9\JJ@[GdP0[=l:WB,E$rlqW3nb<aF@"7T$iF#-'CIA9$kDt&V>pVq=@h!1E>j&]DnMuI%;IV9c0p:#A91U3Rh29\\Xs;HED__$`@9jKdS:k8>bmi(/0(6%f:*g3Bp`N41T07[";EH2inFc)J]d7$[U<RXOBp+4fG=Q/jp`smVt_i2Z!#NTFgd2YDi+%OM"8Qg(oD12r.S7^AJ3@_f<2S(oXK(^A5$Aa55mJia<h;UO??MS%7?aE-m%V([lf[I:M>>B&<+'+>u)F7tEU_n+?6Ieq"2JMr=mZPr_l2<4Q5NJYI0ZQ0@*A*i-"8Cl.^^;sc?O?CaFM:^2I\9Ufn.Z:.5hO@`0[FcIGPSTKS7l01hh\?.hf&7&UA_kVt">"h!7g`,9&nu-(CO0e,&;uY=qY4PW4TMWO[4Rg_Q2$)\C*2`P.7uOV4R$YRUdC>D\$]eKV^^]OBVoFK*ULKDOas<(7$&Z#lLqR*=V?^&+41+iK(SW6J(@#lp'ss8VI_#os8LY)4\Q;Er8I[&*.4sH^rPP>c05[`H*ZMAas&N^N5urqoD,/IQ0renr6GI9$=Ls2DIN*+!c&Nu9r/N+XS3I_Ci1s=3Pb8V7bH;s*Q6\<]Cin=iqCeWc>,KuV;r9p4jhAfc&Q;YF1htQj/^r/YDQ&"&4DoK9EDj%@!^dd`#Q~>
 endstream
 endobj
-xref
-0 11
-0000000000 65535 f 
-0000000061 00000 n 
-0000000102 00000 n 
-0000000209 00000 n 
-0000000321 00000 n 
-0000000514 00000 n 
-0000000708 00000 n 
-0000000776 00000 n 
-0000001082 00000 n 
-0000001147 00000 n 
-0000009981 00000 n 
-trailer
+11 0 obj
 <<
-/ID 
-[<ee99ec643d823264fd1909518ccb4ee9><ee99ec643d823264fd1909518ccb4ee9>]
-% ReportLab generated PDF document -- digest (opensource)
+/Length 4036 /Filter [/ASCII85Decode /FlateDecode]
 
-/Info 7 0 R
-/Root 6 0 R
-/Size 11
 >>
-startxref
-18549
-%%EOF
+stream
+GhU,?;01G^&q8_F0eZTsXp@K`!k`fq1<FQP$k$T!=65dR)";br%6K`/EM`*4hq'(r$%jHMc;c>u)at[i[/-9kqWf1Rf#AfTr8/#&]3);DpD1)O[TG9-BfU!L`J0:Xrr0mZ7loI,a(@KTD7NrbJgW.nG+E^*Z5h'QFn)rqm<:WcYCFB)<j=ojcP@[9\(Nc9Ms8tJS#1+/r&/+nfN:U0F#Ju*'eSO1^L<%I[eM5PrWiEB=jX-O@!-e(b?FU"D!83+Vq^Y4SRW=ZV$W^:"Co5HX0q(5B1p')BYI19;T4U=HHSJX/L"PjB,>;3ei[P+2GJm#<*X(2h/.</2EEDdml@-oeo)G8pKQh#W^2lJ'utV,D_gcV"p/*<\Rp$>[U@c\gsW$)B11KkolD?-$fd;U?^TWQ18&!BVem9m)E1^#BBI4Pqn!(h<2\pn]IWd-f`&>8E\V12UasXRp)JJ@B@`HLjJLs@Cnii9_A=.uhK6?"W6'8qEaM3sPQIK5A2;luJnq@F-Gtk"<Id5p%gN)c>%8m<:8AEh/4Idj<^FNrV.+/WfiH,g=;`CdkQVk<YZ6eA.tTP;M9qCjU;4!-(@KFbltB52c.e]aqh8IB(@9W=K-j5JO(*K0,%-Ped(jI&Ws4c*hg%@3Vk>FYT-I4LVOV3EGT_Ee"C1995Sfqs)6ZY>]q#\29kMtNJB?tfnE?b0=96&RPD>GZp9iOlM@aj(`%?JH=M=ftn'a6.EJ?*=>8PKB9qS=<cbN9U-#W+@=FcRk!c;;E8AqU@<*Yk4T@%knIR)M$_ndaKUNVG3n\G)k-Ku.F!OtXK.qqX.CU*/JIO8*J1f;o,3F)&2D)\t.Afn`sYm>VC)k!5+5m58on^9U!&/uhK#lN.LjBQ;I*Bs6BBX4W6/2[5+Cpr*u@k+r;BsKrV##.LBY=k1^":+'sF'm*b!lVHJVEWuTTuT)q4ii^<GmJ6)nc#f\VT\Cl`brVK3%Z>Y\l6grGT-2K8rToAbHZOD>&tR!!W__6RdlnK^0&O:e?ER-&q%$[:Bu@0T/DULiJa9i<.Q<WfS3jP/TJ1.L_l-l5_#j>NEH6;^*Bcf`B>2f.WFreBB&AZDA9Mfj0?b(@D!X<bPhb%^B80Xln)rBi=Tb2aOo'>bX7@uS>9A:2g@fq<R1"O/OL-k.h7mWHN?8q:8n#VFMNRf8S#2?o,T51A2fL+ao(91&ji`.R&:!#/%.7e#d6[3.n+]``@4&#KnBor1aMu:AjflK#9*WGdO6J'9G==+]$+cnCU-Lo89t!#C*KJN/#=D"n.+H3AugW^h()n/*Z`eWV4;<XbOEu&3#`=1^!V?>Xr"U>b\@T+99I_6TCM\`cWW+$n4R<K%[h)u`-$&;YkcCth=FCbq,&&QNY%_c;7%+$'\W\,c$-_slLM+lW:PBM+9DT6jAskbhK);3r6<Bj'Uq049\B5cIsGA0Y1m[`IU8-)rFEun.3UF0SC='MSE5n>\E3IHqH?]:op*ru)4=QOJ=IsPRCiE^6]_l0DM9d>cf4TJa:qGPBK7CT:]TT:;oURdK7mo#&f`HnkN=rjO<E5>#0@<._C']9Kqo>U)ZOIb0K313H(^T:F_m8\M=U[-&4UfYmrn'L_tEu]ncO_6(%"r]%WEROP"+-q!7&VJb*7u>6Mils]K"22hUN<o.L8<E!HI8,R+Pq*RG#d-CBP3]5*dI6e1+n*!q.l+?'tl;Yg^.ibitNpaVARp%SZgh.iX&_1ahj=C`:*'Tr]G!qQ<TFA]n<u`"L"L)It9*qicZ:6FI373=i`fh)[d?]Ua,7_62V_om.Ag7#$K"Em't?p_H<o'=7#PHp.UC9Jq7)DmBrp\q6?GBttimeO6fTK4QGU6r-Z9<Be@CJG[2YQG=[W:KWH+#>k5R!qDqd4=KV93D_%iDn(:p803s(ni"bMGfP>B<%U`ER<b?XY%<2M4A]EYjei?@@E38Z-F2omn+X0AD0<oZ86DEDA<8g%?4AY;ZIKV)7M1<D_;tq.!lm9a\fhc]cb]d7\$RS=dh+]*"-;;G(@^Ct#uWk'k/`Tc?&LCrEa;?AGNd[kM2eL_,J$n'aK?)pfi3E^-@'sS<)%r5?WaEl^%2;l+!?[u5C*EMFORKVf<l"\>1W^@)ED*4cmGZrD,gl[;*`73B?\,TRfEWVdXZTHoMJ5aaePFO%9p>eU=VqYO*OGupRuK6ec*-C's5p-luB>f*VL.H]TTU^Ok^9a;kdeD:C,\t=2ecmef!H=>5#F=-7dP=I:ENC5'>mjm.FIskd$*j_2u8uJ12u+8:N$%%:@a!JWT/!eX=qO(-Ct(ES:Z4,%-Kr.G2B80].P!#+q6IEcGCpSYkJO=D)i99_+1A4V(Q.Xsp-q/T(1(aS9AK(,AI6P%^Y`-'9j"<Q$NK!?&St")Xqmj42B3%;1UHq[p*NjE`dus'_83q-Z+M>[:(VF>eD/SE%HDWn&T!JE;Ql7]5,rMMe>-WTV]2jdRpXNY!lL8]f0:%O?;s/$#J0Cg=lIHfHQ-K&6\RP<09!o3S7*W#cA!2\pTKD/fu)_,cS;EKR:0:M<)saP@+_MEMVa+-]qR-OiPkO++]bAg87Bjse4po`T.NpM%RO\S=5:?P_DS3ukRSK2Z*M7b^?=!=8!7LNp%]PHT?C2<N%Wpi>TD0ou+`#[94E#\!r+1O0f*c-g-^J1S@<&("igSZW[MR=,!k+iVgfrAl;ek=&-,FCM:Vn&+nLp=Mkl7n=Sg:3j59jp7\)#UF*3(SsZt_]@22]bn"I&c\,p%IpiO6uQa;Oh;^-5^NWnepUN<I8ps=O<><+ms9"3q/Fffg]?qt2n>N)U[`#B]pR$s!r";8HK7f_[:XR(<;/a/U2?N_"M<K1l;=A54s$?pH[H111et$IXgUhrSP1^[>6!nF?,fU.42-"3CG*=gNkDDK%9T`tVmE_oUrgWO&!Oo*qCFP$G,8p)#Yk!VB>mu:Kb1q_lH`Gc1^EaLQH.ONX7BAEWkICsU3UkGEc>u\T.@&7K1F-F?bja*+iULjAOfT76VfPGGUANYhF;tBKj>Y>6MXYcpN=@)mTZUC"#&cD-Z!c0dli/p^?d*HY2Qhj#o75ilO[lbS"Hi1PM\T"cRqE,]ts&6PDu^uLS)l3K8'&(;._Xc`^O<.n)s$-Hq'e?.X;,XGfUDa*iQM$VnP8XMg7E9;R-qFesTh0g$7u/cJ4W3.5)<8#OIa=@ZKk77A0t,DWlIC+-`j0osC!+r/s]p;>!=3'5hhT8ZO`;=f@W^:7

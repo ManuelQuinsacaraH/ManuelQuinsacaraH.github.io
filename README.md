@@ -1,6 +1,6 @@
-# Interactive Executive Resume — Manuel Quinsacara Herrera
+# CV Profesional Dinámico e Interactivo — Manuel Quinsacara Herrera
 
-Perfil profesional interactivo y bilingüe enfocado en **Supply Chain, Logística, Gestión de Materiales, Inventarios, SAP MM/WM, Operaciones Mineras y Mejora Continua**.
+CV profesional dinámico, bilingüe y navegable enfocado en **Cadena de Abastecimiento, Logística, Gestión de Materiales, Inventarios, SAP MM/WM, Operaciones Mineras y Mejora Continua**.
 
 ## Sitio público
 
@@ -19,13 +19,14 @@ Disponible en **Español | English**.
 
 ## Funcionalidades
 
-- Perfil ejecutivo interactivo con navegación por secciones
+- CV profesional dinámico con navegación por secciones
 - Selector ES/EN
 - Diseño responsive para escritorio y móvil
 - Transiciones y microinteracciones con soporte `prefers-reduced-motion`
 - Contacto directo mediante Email, WhatsApp y LinkedIn
 - Barra flotante de contacto y acceso al CV ATS según idioma seleccionado
 - Perfil Profesional PDF y CV ATS bilingües en PDF
+- Sección de portafolio con proyectos profesionales
 - Credenciales verificables seleccionadas
 - Open Graph / Twitter Card para compartir el perfil
 - Schema.org / JSON-LD
@@ -39,6 +40,7 @@ ManuelQuinsacaraH.github.io/
 ├── index.html
 ├── _includes/
 │   └── site-main.html
+├── portfolio.html
 ├── README.md
 ├── robots.txt
 ├── sitemap.xml
@@ -51,7 +53,7 @@ ManuelQuinsacaraH.github.io/
     └── Manuel_Quinsacara_Resume_ATS_General_EN.pdf
 ```
 
-`index.html` aplica únicamente la selección ES/EN de los CV públicos; la fuente completa del perfil se conserva en `_includes/site-main.html`.
+`index.html` mantiene la fuente principal del CV dinámico en `_includes/site-main.html`, publica los CV ATS específicos por idioma y sincroniza la terminología pública principal con la versión ATS vigente.
 
 ## Contacto
 
