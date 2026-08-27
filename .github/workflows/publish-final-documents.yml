@@ -1,0 +1,66 @@
+name: Publish final CV documents
+
+on:
+  push:
+    branches: [binary-update]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild public PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libreoffice-writer ghostscript poppler-utils
+          mkdir -p /tmp/cvpublish
+
+          base64 -d .publish/es.html.gz.b64 | gunzip > /tmp/cvpublish/es.html
+          base64 -d .publish/en.html.gz.b64 | gunzip > /tmp/cvpublish/en.html
+          base64 -d .publish/profile.html.gz.b64 | gunzip > /tmp/cvpublish/profile.html
+
+          libreoffice --headless --convert-to pdf --outdir /tmp/cvpublish /tmp/cvpublish/es.html
+          libreoffice --headless --convert-to pdf --outdir /tmp/cvpublish /tmp/cvpublish/en.html
+          libreoffice --headless --convert-to pdf --outdir /tmp/cvpublish /tmp/cvpublish/profile.html
+
+          gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dDetectDuplicateImages=true -dCompressFonts=true -sOutputFile=assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf /tmp/cvpublish/es.pdf
+          gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dDetectDuplicateImages=true -dCompressFonts=true -sOutputFile=assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf /tmp/cvpublish/en.pdf
+          gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dDetectDuplicateImages=true -dCompressFonts=true -sOutputFile=assets/Perfil_Profesional_Manuel_Quinsacara.pdf /tmp/cvpublish/profile.pdf
+
+      - name: Validate generated PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          pdfinfo assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf | grep -Eq '^Pages:[[:space:]]+2$'
+          pdfinfo assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf | grep -Eq '^Pages:[[:space:]]+2$'
+          pdfinfo assets/Perfil_Profesional_Manuel_Quinsacara.pdf | grep -Eq '^Pages:[[:space:]]+4$'
+
+          pdftotext -layout assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf /tmp/es.txt
+          pdftotext -layout assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf /tmp/en.txt
+          pdftotext -layout assets/Perfil_Profesional_Manuel_Quinsacara.pdf /tmp/profile.txt
+
+          grep -q 'Supervisor de Logística Operacional' /tmp/es.txt
+          grep -q 'Operational Logistics Supervisor' /tmp/en.txt
+          grep -q 'CADENA DE ABASTECIMIENTO Y OPERACIONES' /tmp/profile.txt
+          grep -q 'manuelquinsacarah.github.io' /tmp/es.txt
+          grep -q 'manuelquinsacarah.github.io' /tmp/en.txt
+          grep -q 'manuelquinsacarah.github.io' /tmp/profile.txt
+          grep -q '100.000' /tmp/es.txt
+          grep -q '100,000' /tmp/en.txt
+          grep -q '100.000' /tmp/profile.txt
+
+      - name: Commit validated public documents
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf assets/Perfil_Profesional_Manuel_Quinsacara.pdf
+          git commit -m 'Publish final validated CV documents'
+          git push
