@@ -1,21 +1,66 @@
-# CV Profesional Dinámico — Manuel Quinsacara Herrera
+# CV Profesional Dinámico e Interactivo — Manuel Quinsacara Herrera
 
-Sitio profesional bilingüe (ES/EN) orientado a reclutadores y hiring managers, con experiencia, capacidades, logros verificables y una sección de proyectos/portafolio.
+CV profesional dinámico, bilingüe y navegable enfocado en **Cadena de Abastecimiento, Logística, Gestión de Materiales, Inventarios, SAP MM/WM, Operaciones Mineras y Mejora Continua**.
 
-## Posicionamiento profesional
+## Sitio público
 
-Cadena de Abastecimiento y Operaciones | Logística | Materiales e Inventarios | SAP MM/WM | Minería
+**https://manuelquinsacarah.github.io/**
 
-Supply Chain & Operations | Logistics | Materials & Inventory | SAP MM/WM | Mining
+Disponible en **Español | English**.
 
-## Documentos públicos
+## Principales cifras
 
-- CV ATS General — Español: `assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf`
-- ATS Resume General — English: `assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf`
-- Perfil Profesional: `assets/Perfil_Profesional_Manuel_Quinsacara.pdf`
+- **500+ entregas mensuales**
+- **100.000+ SKU** en universo operacional
+- **~100 personas coordinadas indirectamente**
+- **~50 tractocamiones coordinados**
+- **~30% de reducción de no conformidades asociadas a entregas**
+- **~22,5 horas/mes** de consolidación manual reducidas mediante automatización
 
-## Sitio
+## Funcionalidades
 
-https://manuelquinsacarah.github.io/
+- CV profesional dinámico con navegación por secciones
+- Selector ES/EN
+- Diseño responsive para escritorio y móvil
+- Transiciones y microinteracciones con soporte `prefers-reduced-motion`
+- Contacto directo mediante Email, WhatsApp y LinkedIn
+- Barra flotante de contacto y acceso al CV ATS según idioma seleccionado
+- Perfil Profesional PDF y CV ATS bilingües en PDF
+- Sección de portafolio con proyectos profesionales
+- Credenciales verificables seleccionadas
+- Open Graph / Twitter Card para compartir el perfil
+- Schema.org / JSON-LD
+- Favicon propio
+- `robots.txt` y `sitemap.xml`
 
-El sitio incluye una sección de proyectos con datos sintéticos/anónimos y no publica información confidencial de empleadores anteriores.
+## Estructura
+
+```text
+ManuelQuinsacaraH.github.io/
+├── index.html
+├── _includes/
+│   └── site-main.html
+├── portfolio.html
+├── README.md
+├── robots.txt
+├── sitemap.xml
+└── assets/
+    ├── profile.webp
+    ├── favicon.svg
+    ├── og-preview.jpg
+    ├── Perfil_Profesional_Manuel_Quinsacara.pdf
+    ├── Manuel_Quinsacara_CV_ATS_General_ES.pdf
+    └── Manuel_Quinsacara_Resume_ATS_General_EN.pdf
+```
+
+`index.html` mantiene la fuente principal del CV dinámico en `_includes/site-main.html`, publica los CV ATS específicos por idioma y sincroniza la terminología pública principal con la versión ATS vigente.
+
+## Contacto
+
+**Manuel Quinsacara Herrera**  
+Antofagasta, Chile  
+LinkedIn: https://www.linkedin.com/in/manuelquinsacarah
+
+---
+
+© 2026 Manuel Quinsacara Herrera
