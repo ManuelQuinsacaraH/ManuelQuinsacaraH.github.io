@@ -1,0 +1,47 @@
+name: Publish validated CV binaries
+
+on:
+  push:
+    branches: [binary-publish-v23]
+    paths: ['binary-publish.ready']
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PDF validation tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+      - name: Reconstruct validated documents
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/cv-publish
+          cat .binary-publish/part-*.txt | base64 -d > /tmp/cv-publish/documents.tgz
+          tar -xzf /tmp/cv-publish/documents.tgz -C /tmp/cv-publish
+          cp /tmp/cv-publish/perfil_profesional_v2/Perfil_Profesional_Manuel_Quinsacara_GitHub.pdf assets/Perfil_Profesional_Manuel_Quinsacara.pdf
+          cp /tmp/cv-publish/general_core_v23/final/Manuel_Quinsacara_CV_ATS_General_ES_V2.3_PortalSafe.pdf assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf
+          cp /tmp/cv-publish/general_core_v23/final/Manuel_Quinsacara_Resume_ATS_General_EN_ANZ_V2.3_PortalSafe.pdf assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf
+      - name: Validate PDFs
+        run: |
+          set -euo pipefail
+          for f in assets/Perfil_Profesional_Manuel_Quinsacara.pdf assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf; do
+            pdfinfo "$f" | grep -E 'Pages|Encrypted|PDF version'
+            test "$(pdfdetach -list "$f" | head -1)" = "0 embedded files"
+          done
+          test "$(pdfinfo assets/Perfil_Profesional_Manuel_Quinsacara.pdf | awk '/Pages:/ {print $2}')" = "4"
+          test "$(pdfinfo assets/Manuel_Quinsacara_CV_ATS_General_ES.pdf | awk '/Pages:/ {print $2}')" = "2"
+          test "$(pdfinfo assets/Manuel_Quinsacara_Resume_ATS_General_EN.pdf | awk '/Pages:/ {print $2}')" = "2"
+      - name: Commit binaries and clean temporary publisher
+        run: |
+          set -euo pipefail
+          rm -rf .binary-publish binary-publish.ready .github/workflows/publish-binaries.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish updated ATS and professional profile PDFs"
+          git push
