@@ -1,67 +1,65 @@
-# Manuel Quinsacara Herrera — Professional Story & Portfolio
+# Manuel Quinsacara Herrera — Sitio Profesional
 
-Sitio profesional bilingüe (ES/EN) construido como una **historia profesional interactiva** y no como una copia del CV.
+Este repositorio contiene mi **sitio web profesional y portafolio**, desarrollado como una experiencia bilingüe **Español / Inglés** para presentar mi trayectoria de una forma más humana, visual e interactiva que un CV tradicional.
 
-## Objetivos
+## Sitio web
 
-1. Facilitar procesos de búsqueda laboral.
-2. Generar conversaciones con recruiters y hiring managers.
-3. Demostrar capacidades mediante un portafolio progresivo.
-4. Apoyar networking profesional.
-5. Construir marca profesional de largo plazo.
+**Web:** [https://manuelquinsacarah.github.io/](https://manuelquinsacarah.github.io/)
 
-## Arquitectura
+## ¿De qué se trata?
 
-```text
-/
-├── index.html
-├── portfolio.html
-├── 404.html
-├── .nojekyll
-├── robots.txt
-├── sitemap.xml
-├── README.md
-├── MIGRATION.md
-├── UPLOAD_CHECKLIST.md
-├── SHA256SUMS.txt
-└── assets/
-    ├── css/
-    │   └── site.css
-    ├── js/
-    │   └── site.js
-    ├── favicon.svg
-    ├── og-preview.jpg
-    ├── profile.webp
-    ├── Perfil_Profesional_Manuel_Quinsacara.pdf
-    ├── Manuel_Quinsacara_CV_ATS_General_ES.pdf
-    └── Manuel_Quinsacara_Resume_ATS_General_EN.pdf
-```
+La página presenta mi historia profesional como **Ingeniero Comercial**, mostrando cómo mi trayectoria ha evolucionado desde experiencias iniciales en logística y supervisión hacia responsabilidades en **Supply Chain, gestión de materiales, planificación, inventarios, logística operacional, SAP MM/WM, mejora continua y liderazgo en minería de gran escala**.
 
-## Principios de diseño
+El objetivo del sitio es complementar mi CV y facilitar que recruiters, hiring managers y otros profesionales puedan conocer no solo mis cargos, sino también **cómo he desarrollado mi experiencia, qué tipo de problemas he abordado, qué resultados he generado y hacia dónde quiero seguir creciendo profesionalmente**.
 
-- HTML/CSS/JavaScript sin frameworks ni CDN.
-- GitHub Pages puede publicar los archivos directamente.
-- La fotografía es local (`assets/profile.webp`), por lo que no cambia con el avatar de GitHub.
-- Contacto persistente por Email, WhatsApp y LinkedIn.
-- Selector ES/EN persistente cuando `localStorage` está disponible.
-- `prefers-reduced-motion` respetado.
-- Portfolio marcado `noindex` mientras se encuentra en construcción.
-- Contenido basado en información profesional verificada; no incluye S/4HANA ni métricas pendientes de confirmar.
+La experiencia está organizada como una historia progresiva:
 
-## Portafolio — roadmap
+- **Origen:** formación y primeras experiencias profesionales.
+- **Cambio de escala:** incorporación a operaciones de minería de gran escala.
+- **Liderazgo:** evolución hacia responsabilidades de supervisión y coordinación operacional.
+- **Mejora e impacto:** automatización, estandarización, planificación y resultados medibles.
+- **Aprendizajes:** liderazgo, seguridad, comunicación, datos y mejora continua.
+- **Desarrollo profesional:** formación complementaria y próximos desafíos.
+- **Siguiente paso:** acceso al CV ATS, Perfil Profesional, Portafolio y canales de contacto.
 
-1. **Inventory Health** — En desarrollo.
-2. **Maintenance Materials Readiness** — Próximamente.
-3. **Logistics Service Performance** — Planificado.
-4. Evolución futura posible: **Integrated Supply Chain Control Tower**.
+## Portafolio
 
-Todos los datasets del portafolio deben ser sintéticos, documentados y sin información confidencial de empleadores anteriores.
+El sitio incorpora una sección de portafolio actualmente **en construcción**, orientada a transformar problemas reales de Supply Chain y operaciones en proyectos demostrables mediante **datos sintéticos y sin información confidencial**.
 
-## Actualización de contenido
+Las primeras líneas de desarrollo contempladas son:
 
-- Textos y estructura: `index.html` / `portfolio.html`.
-- Diseño y responsive: `assets/css/site.css`.
-- Idioma, scroll, animaciones y links ATS: `assets/js/site.js`.
-- Documentos: reemplazar el PDF conservando el mismo nombre de archivo evita editar enlaces.
+1. **Inventory Health** — análisis de salud y riesgo de inventarios.
+2. **Maintenance Materials Readiness** — disponibilidad de materiales para mantenimiento.
+3. **Logistics Service Performance** — desempeño de servicios logísticos y nivel de servicio.
 
-© 2026 Manuel Quinsacara Herrera
+## Documentos y contacto
+
+Desde la web se puede acceder directamente a:
+
+- **CV ATS en español e inglés**.
+- **Perfil Profesional**.
+- **Portafolio**.
+- **Email**.
+- **WhatsApp**.
+- **LinkedIn**.
+
+## Tecnología
+
+El sitio está desarrollado con **HTML, CSS y JavaScript**, sin frameworks ni dependencias externas obligatorias. Esta arquitectura permite publicarlo directamente mediante **GitHub Pages**, mantener una carga rápida y facilitar futuras actualizaciones.
+
+También incluye:
+
+- diseño responsive para desktop, tablet y móvil;
+- navegación y storytelling mediante scroll;
+- selector persistente ES/EN;
+- animaciones con soporte para `prefers-reduced-motion`;
+- SEO y Open Graph;
+- página 404 personalizada;
+- sitemap y robots.txt;
+- fotografía y recursos principales almacenados localmente.
+
+---
+
+**Manuel Quinsacara Herrera**  
+Ingeniero Comercial | Supply Chain & Gestión de Materiales  
+Antofagasta, Chile
